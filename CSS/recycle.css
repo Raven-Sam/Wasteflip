@@ -1,0 +1,239 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+h3 {
+  font-size: 4rem;
+  color: #1b5e20;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.recycle-container {
+  padding: 0 5rem;
+}
+.recycle-hero {
+  background-image: url(/Images/recycle-hero.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  margin: 0 -5rem;
+}
+
+.recycle-hero h1 {
+  font-size: 4rem;
+  max-width: 70%;
+}
+.recycle-hero p {
+  max-width: 32%;
+}
+.selection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 4.5rem;
+  margin-bottom: 80px;
+}
+.type {
+  background-color: #f2f2f2;
+  border-radius: 100px;
+  padding: 1.5rem 3rem;
+  padding-left: 30px;
+  width: 300px;
+}
+.type h4 {
+  margin-bottom: 0.5rem;
+}
+.type p {
+  font-size: smaller;
+}
+select {
+  border: none;
+  background-color: #f2f2f2;
+}
+.location {
+  background-color: #fff;
+  position: relative;
+  right: 5rem;
+}
+.scale,
+.category {
+  display: flex;
+  gap: 20px;
+}
+.category {
+  flex-wrap: wrap;
+}
+.scale h4 {
+  color: #1b5e20;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.scale h4:first-of-type {
+  border-bottom: 1px solid #1b5e20;
+}
+
+.category p {
+  border: 2px solid #4caf50;
+  padding: 0.5rem 1.2rem;
+  margin-bottom: 3rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1e1e1e;
+}
+
+.waste-category,
+.drop-Offs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.5rem;
+}
+.waste-type,
+.area {
+  width: 30%;
+}
+.waste-type img,
+.area img {
+  width: 100%;
+}
+.green-bar {
+  color: #ffeb3b;
+  background-color: #1b5e20;
+  position: relative;
+  bottom: 3rem;
+  text-align: center;
+  padding: 1rem 0;
+  border-radius: 0 0 25px 25px;
+}
+.carousel-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+  gap: 5px;
+}
+.carousel-bar div {
+  background-color: #cbfbce;
+  width: 15px;
+  height: 8px;
+  border-radius: 5px;
+}
+
+.carousel-bar div:first-of-type {
+  background-color: #1b5e20;
+  width: 25px;
+}
+
+.area h5 {
+  font-size: 2rem;
+  color: #1b5e20;
+  margin-bottom: 1rem;
+}
+.area p {
+  color: #777777;
+  font-weight: 600;
+}
+.area p .fa {
+  transform: rotate(-90deg);
+  color: #777777;
+}
+
+.drop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 6rem;
+}
+.drop h3 {
+  align-self: flex-start;
+}
+.drop-Offs {
+  margin-bottom: 3rem;
+}
+.button {
+  background-color: #1b5e20;
+  color: #ffffff;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  border: none;
+  gap: 10px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.fa-map {
+  transform: rotateY(-180deg);
+}
+.testimonials {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+.testimonials h5 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.testimonials h3 {
+  width: 80%;
+  text-align: center;
+}
+.test-wrap {
+  display: flex;
+  gap: 2rem;
+}
+.testimonial-card {
+  background: #ffeb3b;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 25px;
+  padding: 2rem;
+  color: #1b5e20;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.testimonial-card p {
+  background: url(/Images/Vector.png);
+  background-repeat: no-repeat;
+  text-align: center;
+  font-size: 26.7px;
+  margin-bottom: 1rem;
+  line-height: 2.5rem;
+}
+.card-top {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+.card-top h5 {
+  font-size: 2.5rem;
+}
+.FAQ {
+  text-align: center;
+}
+.FAQ h3 {
+  font-weight: 700;
+  line-height: 5rem;
+}
+
+/* Dispose page css */
+.dispose-hero {
+  background-image: url(/IMAGES/dispose-hero.png);
+}
