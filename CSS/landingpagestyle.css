@@ -578,7 +578,7 @@ span {
   max-width: 100wh;
   background-color: white;
   text-align: center;
-  position: relative;
+  /* position: relative; */
 }
 .section5 div h2 {
   color: #1b5e20;
@@ -725,7 +725,7 @@ span {
 /*FOOTER*/
 .footer {
   background-color: #ffee54;
-  padding: 10px 20px;
+  /* padding: 0.625rem 1.25rem; */
   position: relative;
   bottom: 0;
   width: auto;
@@ -734,11 +734,12 @@ span {
 .footer .container {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   flex-wrap: wrap;
   text-align: center;
   align-items: center;
   height: 200px;
-  padding: auto;
+  /* padding: auto; */
   margin-bottom: 50px;
 }
 
