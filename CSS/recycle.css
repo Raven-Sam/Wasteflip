@@ -14,7 +14,7 @@ h3 {
   margin-bottom: 2rem;
 }
 .recycle-container {
-  padding: 0 5rem;
+  padding: 0 5%;
 }
 .recycle-hero {
   background-image: url(/Images/recycle-hero.png);
@@ -27,7 +27,7 @@ h3 {
   justify-content: center;
   align-items: center;
   color: #ffffff;
-  margin: 0 -5rem;
+  margin: 0 -5.5%;
 }
 
 .recycle-hero h1 {
@@ -98,7 +98,8 @@ select {
 .drop-Offs {
   display: flex;
   flex-wrap: wrap;
-  gap: 3.5rem;
+  justify-content: space-between;
+  /* gap: 3.5rem; */
 }
 .waste-type,
 .area {
@@ -175,9 +176,7 @@ select {
   font-size: 1.5rem;
   font-weight: 600;
 }
-.fa-map {
-  transform: rotateY(-180deg);
-}
+
 .testimonials {
   display: flex;
   gap: 2rem;
@@ -195,6 +194,8 @@ select {
 }
 .test-wrap {
   display: flex;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
   gap: 2rem;
 }
 .testimonial-card {
@@ -203,6 +204,7 @@ select {
   background-repeat: no-repeat;
   border-radius: 25px;
   padding: 2rem;
+  width: 48%;
   color: #1b5e20;
   display: flex;
   flex-direction: column;
@@ -222,6 +224,7 @@ select {
   align-items: flex-start;
   margin-bottom: 2rem;
 }
+
 .card-top h5 {
   font-size: 2.5rem;
 }
@@ -237,3 +240,19 @@ select {
 .dispose-hero {
   background-image: url(/IMAGES/dispose-hero.png);
 }
+
+/* @media only screen and (max-width: 992px) {
+  .testimonial-card {
+    width: 48%;
+  }
+  .card-top h5 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .card-top img {
+    width: 100%;
+    height: auto;
+  }
+} */

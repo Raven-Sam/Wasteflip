@@ -95,14 +95,12 @@ nav li:first-child {
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
-  
 }
 
 .content-text {
   max-width: 30%;
   max-height: 50%;
   margin-left: 40px;
- 
 }
 .hero-content h2 {
   font-size: 50px;
@@ -125,12 +123,11 @@ nav li:first-child {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 1rem;
   margin: 0 10px;
   transition: background-color 0.3s ease, transform 0.3s ease;
   position: relative;
   overflow: hidden;
-
 }
 
 .pickup-bt {
@@ -232,12 +229,12 @@ nav li:first-child {
   animation-timeline: view();
   animation-range: entry 0 cover 40%;
 }
-@keyframes appear{
-  from{
-    opacity:0;
+@keyframes appear {
+  from {
+    opacity: 0;
     scale: 0.5;
   }
-  to{
+  to {
     opacity: 1;
     scale: 1;
   }
@@ -361,8 +358,7 @@ nav li:first-child {
   margin-bottom: 1.875rem;
 }
 
-.section3-writeup{
-
+.section3-writeup {
   width: 100%;
   padding: 20px;
   height: 100vh;
@@ -371,7 +367,6 @@ nav li:first-child {
   justify-content: space-evenly;
 }
 .section3-text1 {
-  
   margin-top: 30px;
   margin-bottom: 30px;
   text-align: left;
@@ -380,46 +375,35 @@ nav li:first-child {
 .section3-text1 h3 {
   font-size: 50px;
   margin-bottom: 15px;
-  
 }
 
 .section3-text1 p {
   font-size: 20px;
   line-height: 1.5;
-
-
 }
 
-span{
-    background-image: conic-gradient(
-  
-      #4caf50,
-      #ff0000,
-      #3b5998,
-      #ffff00,
-      #4caf50
-    );
-    background-size: 400% 400%;
-    animation: spananimation 5s infinite;
-    border-radius: 3px;
-    -webkit-text-fill-color: transparent; 
-    -webkit-background-clip: text;
-    transition: background-image 0.3s ease, color 0.3s ease;
+span {
+  background-image: conic-gradient(#4caf50, #ff0000, #3b5998, #ffff00, #4caf50);
+  background-size: 400% 400%;
+  animation: spananimation 5s infinite;
+  border-radius: 3px;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  transition: background-image 0.3s ease, color 0.3s ease;
+}
+@keyframes spananimation {
+  0% {
+    background-position: 0% -50%;
   }
-  @keyframes  spananimation{
-    0% {
-      background-position: 0% -50%;
-    }
-    50% {
-      background-position: -100% 50%;
-    }
-    100% {
-      background-position: 50% 0%;
-    }
+  50% {
+    background-position: -100% 50%;
   }
+  100% {
+    background-position: 50% 0%;
+  }
+}
 
-.section3-text2{
-
+.section3-text2 {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -428,18 +412,16 @@ span{
   text-align: left;
 }
 
-
 .section3-text2 h3 {
   font-size: 40px;
   margin-bottom: 10px;
 }
 
-.text2 .text3{
-  font-size:10px;
+.text2 .text3 {
+  font-size: 10px;
   line-height: 1.5;
-  
 }
-.text3{
+.text3 {
   margin-right: 6.25rem;
 }
 
@@ -447,11 +429,10 @@ span{
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  
+
   margin-bottom: 30px;
   position: relative;
   bottom: 4rem;
-
 }
 
 .section3-img {
@@ -476,7 +457,6 @@ span{
 .section4 {
   position: relative;
   overflow: hidden;
-
 }
 
 /* Add some styling to make the section more visually appealing */
@@ -493,28 +473,33 @@ span{
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-
 }
-.section4-child1 h2{
-  width:35%;
-  font-size:2.5rem;
+.section4-child1 h2 {
+  width: 35%;
+  font-size: 2.5rem;
   text-align: left;
 }
-.section4-child1 p{
-line-height: 1.5;
-  text-align:left;
+.section4-child1 p {
+  line-height: 1.5;
+  text-align: left;
   width: 500px;
 }
 
 .section4-child2 {
-  width:100%;
-  height:320px;
+  width: 100%;
+  height: 320px;
   margin-top: 100px;
   margin-inline: auto;
   position: relative;
   overflow: hidden;
-  mask-image: linear-gradient( to right, rgba(0,0,0,0),rgba(0,0,0,1), 20%,rgba(0,0,0,1), 80%,
-  rgba(0,0,0,0),
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1),
+    20%,
+    rgba(0, 0, 0, 1),
+    80%,
+    rgba(0, 0, 0, 0)
   );
 }
 .child2-cnt1,
@@ -531,24 +516,24 @@ line-height: 1.5;
   border-radius: 10px;
   animation: scrollAnimation 20s linear infinite;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border:1px solid #f9c23c;
+  border: 1px solid #f9c23c;
   left: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 @keyframes scrollAnimation {
-  to{
+  to {
     left: -30%;
   }
 }
-.child2-cnt1{
+.child2-cnt1 {
   animation-delay: calc(20s / 3 * (3 - 1) * -1);
 }
-.child2-cnt2{
+.child2-cnt2 {
   animation-delay: calc(20s / 3 * (3 - 2) * -1);
 }
-.child2-cnt3{
+.child2-cnt3 {
   animation-delay: calc(20s / 3 * (3 - 3) * -1);
 }
 
@@ -574,18 +559,15 @@ line-height: 1.5;
   text-align: center;
   align-self: center;
   font-size: 1.25rem;
-margin-bottom: 30px;
+  margin-bottom: 30px;
 }
-.section4-bt{
-   display: inline-block;
-   position: relative;
-   top: 100px;
-   right:500px;
+.section4-bt {
+  display: inline-block;
+  position: relative;
+  top: 100px;
+  right: 500px;
 }
-.section4 .pickup-bt{
-  background-color:#ffc107;
+.section4 .pickup-bt {
+  background-color: #ffc107;
   color: #1b5e20;
 }
-
-
-
