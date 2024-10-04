@@ -182,6 +182,14 @@ input {
   background-color: #1b5e20;
   color: #ffeb3b;
 }
+button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+button:hover {
+  background-color: #0069d9;
+}
 /*FOOTER*/
 footer {
   background-color: #ffeb3b;

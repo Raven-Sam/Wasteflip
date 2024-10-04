@@ -418,6 +418,14 @@ select {
   align-items: center;
   gap: 0.625rem;
 }
+button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+button:hover {
+  background-color: #0069d9;
+}
 
 /* Footer Section */
 footer {
