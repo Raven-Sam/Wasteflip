@@ -12,7 +12,7 @@ body{
 nav{
     background-color:#F9F9F9;
     width: auto;
-    border-radius: 3px;
+    border-radius: 0.1875rem;
 
 }
 
@@ -25,13 +25,15 @@ align-items: center;
 }
 
 nav li{
-    height:60px;
-    margin-top: 10px;
+
+    height:3.75rem;
+    margin-top: 0.625rem;
+
 }
 
 nav a{
     height: 100%;
-    padding: 0 30px;
+    padding: 0 1.875rem;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -48,12 +50,12 @@ nav a button{
     color: #1B5E20;
     background-color:#FFEB3B;
     border: none;
-    padding:5px 20px;
-    margin-top: 10px;
-    border-radius: 5px;
+    padding:0.3125rem 1.25rem;
+    margin-top: 0.625rem;
+    border-radius: 0.3125rem;
     font-weight: bold;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .nav-button:hover{
@@ -65,17 +67,17 @@ nav a button{
 nav li:first-child{
     margin-right: auto;
     color: #1B5E20;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-family: "Mochiy Pop One", sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 30px;
+    margin-left: 1.875rem;
 
 }
 
 .card-info{
-    margin: 70px;
+    margin: 4.375rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -89,14 +91,14 @@ nav li:first-child{
     gap: 3rem;
 }
 .card-icons > img{
-    height: 70px;
+    height: 4.375rem;
 }
 
 .payment-section{
-    margin: 70px;
+    margin: 4.375rem;
 }
 .payment-info {
-    margin: 70px;
+    margin: 4.375rem;
     color:#1B5E20;
     display: flex;
     gap: 2rem;
@@ -110,12 +112,12 @@ label{
  input {
     width: 100%; 
     height: 3.5rem; 
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 3px;
-    border: 1px solid  #1B5E20; ;
-    font-size: 16px;
-    box-sizing: border-box;  /* Ensures padding is included in width */
+    padding: 0.625rem;
+    margin-bottom: 1.25rem;
+    border-radius: 0.1875rem;
+    border: 0.0625rem solid  #1B5E20; ;
+    font-size: 1rem;
+    box-sizing: border-box;  
 }
 
 .exp-cvv{
@@ -136,13 +138,13 @@ label{
 .payment-actions {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 
 .cancel-btn, .pay-btn {
-    padding: 12px 20px;
-    border-radius: 3px;
-    font-size: 16px;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.1875rem;
+    font-size: 1rem;
     border: none;
     cursor: pointer;
 }
