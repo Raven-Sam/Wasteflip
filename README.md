@@ -11,10 +11,13 @@ Waste management in urban cities like Lagos and Abuja among others, faces issues
 # PRODUCT OBJECTIVES #
 
 The platform aims to:
-● #User convenience #: The platform aims to offer effective and reliable connection to waste management and recycling companies.
-● #Reduce Waste#: By offering reselling options, individuals and businesses can sell used items like furniture, electronics, and equipment, keeping valuable goods out of landfills.
-● #Improve Recycling Access#: WasteFlip will help users locate nearby recycling services and schedule waste pickups easily.
-● #Create Economic Incentives#: Users can earn money by reselling goods, and businesses can offload old equipment efficiently, promoting recycling while gaining financially. 
+#User convenience#: The platform aims to offer effective and reliable connection to waste management and recycling companies.
+
+#Reduce Waste#: By offering reselling options, individuals and businesses can sell used items like furniture, electronics, and equipment, keeping valuable goods out of landfills.
+
+#Improve Recycling Access#: WasteFlip will help users locate nearby recycling services and schedule waste pickups easily.
+
+#Create Economic Incentives#: Users can earn money by reselling goods, and businesses can offload old equipment efficiently, promoting recycling while gaining financially. 
 
 
 # MVP FEATURES #
