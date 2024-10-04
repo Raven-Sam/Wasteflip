@@ -1,0 +1,282 @@
+*{
+  margin: 0;
+  padding: 0;  
+}
+
+body{
+    min-width: 100vh;
+    min-height: 100vh;
+    font-family: "Inter", sans-serif;
+}
+
+nav{
+    background-color:#F9F9F9;
+    width: auto;
+    border-radius: 0.1875rem;
+
+}
+
+nav ul{
+width: 100%;
+list-style-type: none;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+}
+
+nav li{
+
+    height:3.75rem;
+    margin-top: 0.625rem;
+
+}
+
+nav a{
+    height: 100%;
+    padding: 0 1.875rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color:black;   
+}
+
+.link:hover{
+    background-color: rgba(255, 255, 255, 0.314);
+    filter: blur(20%);
+    transition:all 0.5s ease-in;
+}
+
+nav a button{
+    color: #1B5E20;
+    background-color:#FFEB3B;
+    border: none;
+    padding:0.3125rem 1.25rem;
+    margin-top: 0.625rem;
+    border-radius: 0.3125rem;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.nav-button:hover{
+    background-color: #F9C23C;
+    transform: scale(1.1);
+    transition: all 0.5s ease-in;
+}
+
+nav li:first-child{
+    margin-right: auto;
+    color: #1B5E20;
+    font-size: 2.5rem;
+    font-family: "Mochiy Pop One", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1.875rem;
+
+}
+
+.card-info{
+    margin: 4.375rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color:  #1B5E20;
+}
+#card-type{
+    font-weight: 400;
+}
+.card-icons{
+    display: flex;
+    gap: 3rem;
+}
+.card-icons > img{
+    height: 4.375rem;
+}
+
+.payment-section{
+    margin: 4.375rem;
+}
+.payment-info {
+    margin: 4.375rem;
+    color:#1B5E20;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+label{
+    font-weight: bold;
+
+}
+ input {
+    width: 100%; 
+    height: 3.5rem; 
+    padding: 0.625rem;
+    margin-bottom: 1.25rem;
+    border-radius: 0.1875rem;
+    border: 0.0625rem solid  #1B5E20; ;
+    font-size: 1rem;
+    box-sizing: border-box;  
+}
+
+.exp-cvv{
+    display: flex;
+    gap:5rem;
+    justify-content: center;  
+}
+
+.exp-cvv-input {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.expiration-cvv , .exp-cvv-input {
+    width: 48%;
+}
+
+.payment-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.25rem;
+}
+
+.cancel-btn, .pay-btn {
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.1875rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.cancel-btn {
+    background-color: #fff;
+    color: #1B5E20;
+}
+
+.pay-btn {
+    background-color: #1B5E20;
+    color: #FFEB3B;
+}
+/*FOOTER*/
+.footer {
+  background-color: #FFEE54;
+  padding: 0.625rem 1.25rem;
+  position: relative;
+  bottom: 0;
+  width: auto;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  height:12.5rem;
+  padding: auto;
+  margin-bottom: 3.125rem;
+}
+
+.footer .section {
+  font-weight: bold;
+  width: 20%;
+  min-width: 11.25rem;
+}
+.footer .section img {
+width: 1.25rem;
+}
+.footer h3 {
+  font-size: 1.875rem;
+  padding-right: 6.25rem;
+  font-family:"Mochiy Pop One", "sans-serif";
+}
+
+.foooter section h4 {
+  background-color: #3b5998;
+}
+.section h4{
+   font-size: 1.25rem;
+}
+.wasteflip-info{
+  padding: 0.625rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.more-inf {
+  width: 20%;
+  min-width: 11.25rem;
+  height: 9.375rem;
+  display: flex;
+  font-weight: bold;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.more-inf img{
+  width: 1.25rem;
+  position: relative;
+  top: 0.1875rem;
+
+}
+
+.footer p,
+.footer a {
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
+
+}
+.section a{
+  line-height: 1.875rem;
+  transition: color 0.3s ease;
+}
+
+.section a:hover {
+  color: #1b5e20;
+}
+.footer .social-icons a {
+  margin-right: 0.625rem;
+}
+
+.footer .social-icons img {
+  margin-top: 1.25rem;
+  width: 1.25rem;
+}
+.footer .image-container {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+}
+
+.footer .image-container img {
+  width: 150px;
+  height: 150px;
+  margin-right: 6.25rem;
+}
+
+.footer-bottom {
+  margin-top: 1.25rem;
+  text-align: left;
+  font-size: 0.875rem;
+  border-top: 0.0625rem solid black;
+  padding-top: 1.25rem;
+margin-right: 1.25rem;
+  position: relative;
+  font-weight: bold;
+}
+.footer-bottom a {
+  color: black;
+  margin-right: 1.25rem;
+}
+
+.footer-bottom .copyright {
+  margin-top: 0.625rem;
+  text-align: center;
+  position: absolute;
+  top: 6.25rem;
+  right: 18.75rem;
+}
