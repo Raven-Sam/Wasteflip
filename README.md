@@ -16,7 +16,7 @@ The platform aims to:
 
 The platform aims to offer effective and reliable connection to waste management and recycling companies.
 
-# Reduce Waste #: 
+# Reduce Waste: 
 
 By offering reselling options, individuals and businesses can sell used items like furniture, electronics, and equipment, keeping valuable goods out of landfills.
 
