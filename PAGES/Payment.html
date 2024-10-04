@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/CSS/payment.css" />
+    <title>Payment</title>
+  </head>
+  <body>
+    <style>
+      .nav-button {
+        display: none;
+      }
+    </style>
+    <nav>
+      <div class="logo">WasteFlip</div>
+      <div class="hamburger" id="hamburger-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul id="nav-links">
+        <li class="link"><a href="/homepage.html">Home</a></li>
+        <li class="link"><a href="/PAGES/recycle.html">Recycle Center</a></li>
+        <li class="link"><a href="#">Pickup Schedule</a></li>
+        <li class="link"><a href="#contact-us">Contact Us</a></li>
+        <a href="PAGES/SIGNUP-PAGE.HTML"
+          ><button class="nav-button">Sign Up</button></a
+        >
+      </ul>
+    </nav>
+    <div class="payment-section">
+      <div class="card-info">
+        <h2>Card Details</h2>
+        <h4 id="card-type">Card Type</h4>
+        <div class="card-icons">
+          <img src="/IMAGES/mastercard icon.svg" alt="mastercard" />
+          <img src="/IMAGES/visa icon.svg" alt="visa card" />
+          <img src="/IMAGES/paypal.svg" alt="paypal" />
+        </div>
+      </div>
+
+      <div class="payment-info">
+        <label for="card-name">Name on Card</label>
+        <input type="text" id="card-name" placeholder="Aminat Lasis" required />
+
+        <label for="card-number">Number on Card</label>
+        <input
+          type="text"
+          id="card number"
+          placeholder="11111 2222 4444 6666"
+          required
+        />
+
+        <div class="exp-cvv">
+          <div class="exp-cvv-input">
+            <label for="expiration">Expiration Date</label>
+            <input type="text" id="expiration" placeholder="10/27" required />
+          </div>
+          <div class="exp-cvv-input">
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" placeholder="195" required />
+          </div>
+        </div>
+
+        <div class="payment-actions">
+          <button type="button" class="cancel-btn">Cancel payment</button>
+          <button type="button" class="pay-btn">PayNow</button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <!-- Company Info -->
+        <div class="section1">
+          <h3>WasteFlip</h3>
+          <div class="wasteflip-info">
+            <p>
+              Manage your waste pickups with us as we seamlessly connect you to
+              the best waste management around you
+            </p>
+          </div>
+        </div>
+
+        <!-- Company Links -->
+        <div class="section2">
+          <h4>Company</h4>
+          <p><a href="#">About Us</a></p>
+          <p><a href="#">Sustainability</a></p>
+          <p><a href="#">Leadership team</a></p>
+        </div>
+
+        <!-- Services Links -->
+        <div class="section2">
+          <h4>Services</h4>
+          <p><a href="#">Individuals</a></p>
+          <p><a href="#">Businesses</a></p>
+          <p><a href="#">Waste Management</a></p>
+        </div>
+        <!-- Social Media Links -->
+        <div class="section4">
+          <h4>
+            You can also reach us on <br />
+            our social media platforms
+          </h4>
+          <div class="social-icons">
+            <a href="#"
+              ><img src="/IMAGES/prime_twitter.svg" alt="Twitter"
+            /></a>
+            <a href="#"
+              ><img src="/IMAGES/grommet-icons_linkedin.svg" alt="LinkedIn"
+            /></a>
+            <a href="#"><img src="/IMAGES/Vector.svg" alt="Instagram" /></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer MIDDLE-->
+      <div class="more-inf">
+        <h5>For more information, reach out to us</h5>
+        <div>
+          <p class="mail">
+            <img src="/IMAGES/mail.svg" alt="email" />
+            <a href="mailto:Wasteflip@gmail.com">Wasteflip@gmail.com</a>
+          </p>
+          <p class="mail">
+            <img src="/IMAGES/phone-outgoing.svg" alt="call" />
+            <a href="tel:+2342868849802">+234 2868 849802</a>
+          </p>
+        </div>
+      </div>
+      <div class="hr"></div>
+      <!-- Footer Bottom -->
+      <div class="footer-bottom" id="contact-us">
+        <div class="bottom-left">
+          <a href="#">Privacy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+        <div class="copyright">
+          &copy; 2024 WasteFlip. All rights reserved.
+          <div class="image-container">
+            <img src="/IMAGES/Trash.svg" alt="Trash Icon" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    const nav = document.querySelector("nav");
+
+    nav.addEventListener("animationend", function () {
+      nav.style.backgroundImage = "linear-gradient(to right,white , white)";
+    });
+    const hamburgerMenu = document.getElementById("hamburger-menu");
+    const navLinks = document.getElementById("nav-links");
+
+    hamburgerMenu.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
+</html>
