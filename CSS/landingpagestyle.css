@@ -4,7 +4,7 @@
   font-family: "Inter", sans-serif;
 }
 body {
-  min-width: 100vW;
+  min-width: 100vw;
   max-height: 100%;
 }
 nav {
@@ -95,7 +95,6 @@ nav li:first-child {
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
-  
 }
 
 .content-text {
@@ -130,7 +129,6 @@ nav li:first-child {
   transition: background-color 0.3s ease, transform 0.3s ease;
   position: relative;
   overflow: hidden;
-
 }
 
 .pickup-bt {
@@ -232,12 +230,12 @@ nav li:first-child {
   animation-timeline: view();
   animation-range: entry 0 cover 40%;
 }
-@keyframes appear{
-  from{
-    opacity:0;
+@keyframes appear {
+  from {
+    opacity: 0;
     scale: 0.5;
   }
-  to{
+  to {
     opacity: 1;
     scale: 1;
   }
@@ -363,8 +361,7 @@ nav li:first-child {
   margin-bottom: 1.875rem;
 }
 
-.section3-writeup{
-
+.section3-writeup {
   width: 100%;
   padding: 1.25rem;
   height: 100vh;
@@ -388,8 +385,6 @@ nav li:first-child {
 .section3-text1 p {
   font-size: 1.25rem;
   line-height: 1.5;
-
-
 }
 
 span{
@@ -408,7 +403,16 @@ span{
     -webkit-background-clip: text;
     transition: background-image 0.3s ease, color 0.3s ease;
   }
-  @keyframes  spananimation{
+  span {
+    background-image: conic-gradient(#4caf50, #ff0000, #3b5998, #ffff00, #4caf50);
+    background-size: 400% 400%;
+    animation: spananimation 5s infinite;
+    border-radius: 3px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    transition: background-image 0.3s ease, color 0.3s ease;
+  }
+  @keyframes spananimation {
     0% {
       background-position: 0% -50%;
     }
@@ -420,8 +424,7 @@ span{
     }
   }
 
-.section3-text2{
-
+.section3-text2 {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -429,7 +432,6 @@ span{
   margin-bottom: 1.875rem;
   text-align: left;
 }
-
 
 .section3-text2 h3 {
   font-size: 2.5rem;
@@ -439,10 +441,9 @@ span{
 .text2 .text3{
   font-size:0.625rem;
   line-height: 1.5;
-  
 }
 .text3{
-  margin-right: 100px;
+  margin-right: 6.25rem;
 }
 
 .section3-butons {
@@ -453,7 +454,6 @@ span{
   margin-bottom: 1.875rem;
   position: relative;
   bottom: 4rem;
-
 }
 
 .section3-img {
@@ -478,7 +478,6 @@ span{
 .section4 {
   position: relative;
   overflow: hidden;
-
 }
 .section4 {
   background-color: #1b5e20;
@@ -493,11 +492,10 @@ span{
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-
 }
-.section4-child1 h2{
-  width:35%;
-  font-size:2.5rem;
+.section4-child1 h2 {
+  width: 35%;
+  font-size: 2.5rem;
   text-align: left;
 }
 .section4-child1 p{
@@ -513,8 +511,14 @@ line-height: 1.5;
   margin-inline: auto;
   position: relative;
   overflow: hidden;
-  mask-image: linear-gradient( to right, rgba(0,0,0,0),rgba(0,0,0,1), 20%,rgba(0,0,0,1), 80%,
-  rgba(0,0,0,0),
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1),
+    20%,
+    rgba(0, 0, 0, 1),
+    80%,
+    rgba(0, 0, 0, 0)
   );
 }
 .child2-cnt1,
@@ -538,24 +542,24 @@ line-height: 1.5;
   justify-content: space-between;
 }
 @keyframes scrollAnimation {
-  to{
+  to {
     left: -30%;
   }
 }
-.child2-cnt1{
+.child2-cnt1 {
   animation-delay: calc(20s / 3 * (3 - 1) * -1);
 }
-.child2-cnt2{
+.child2-cnt2 {
   animation-delay: calc(20s / 3 * (3 - 2) * -1);
 }
-.child2-cnt3{
+.child2-cnt3 {
   animation-delay: calc(20s / 3 * (3 - 3) * -1);
 }
 
 .child2-cnt1:hover,
 .child2-cnt2:hover,
 .child2-cnt3:hover {
-  transform: scale(0.90);
+  transform: scale(0.9);
   transition: transform 0.3s ease-in-out;
 }
 
@@ -582,8 +586,8 @@ margin-bottom: 1.875rem;
    top: 6.25rem;
    right:31.25rem;
 }
-.section4 .pickup-bt{
-  background-color:#ffc107;
+.section4 .pickup-bt {
+  background-color: #ffc107;
   color: #1b5e20;
 }
 
@@ -684,13 +688,13 @@ margin-bottom: 1.875rem;
   height: 43.75rem;
   max-width: 100vw;
   text-align: center;
-  position: relative;
+  /* position: relative; */
 }
-.section5 div h2{
+.section5 div h2 {
   color: #1b5e20;
   font-size: 2.1875rem;
   position:absolute;
-  top: 50px;
+  top: 3.125rem;
   left:5.625rem;
 
 }
@@ -721,8 +725,7 @@ margin-bottom: 1.875rem;
   justify-content: space-around;
   margin: 0 auto;
 }
-.questionbox-cont{
-  
+.questionbox-cont {
   display: flex;
   height: 25rem;
   justify-content: center;
@@ -746,7 +749,7 @@ margin-bottom: 1.875rem;
  position: relative;
 }
 .question-box::after {
-  content:'';
+  content: "";
   position: absolute;
   background-image: conic-gradient(
     from var(--angle),
@@ -779,19 +782,17 @@ margin-bottom: 1.875rem;
   font-size: 1rem;
   width: 100%;
   height: 40%;
-
 }
 
-.newsletter{
+.newsletter {
   max-width: 100%;
   height: 25rem;
   display: flex;
   justify-content: center;
   align-items: center;
- 
 }
-.newsletter-ct{
-  background-color:#EBEBEB;
+.newsletter-ct {
+  background-color: #ebebeb;
   display: flex;
   width: 70%;
   height: 18.75rem;
@@ -799,10 +800,10 @@ margin-bottom: 1.875rem;
   align-items: center;
   text-align: left;
 }
-.newsletter h2{
+.newsletter h2 {
   color: #1b5e20;
   font-size: 3.125rem;
-  margin-bottom: 7.2px;
+  margin-bottom: 0.45rem;
 }
 .newsletter p {
   color: black;
@@ -841,7 +842,6 @@ margin-bottom: 1.875rem;
   background-color: #003300;
 }
 
-
 /*FOOTER*/
 .footer {
   background-color: #FFEE54;
@@ -854,6 +854,7 @@ margin-bottom: 1.875rem;
 .footer .container {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   flex-wrap: wrap;
   text-align: center;
   align-items: center;
@@ -877,7 +878,7 @@ width: 1.25rem;
 }
 
 .foooter section h4 {
-   background-color: #3b5998;
+  background-color: #3b5998;
 }
 .section h4{
    font-size: 1.25rem;
@@ -890,7 +891,7 @@ width: 1.25rem;
   text-align: left;
 }
 
-.more-inf{
+.more-inf {
   width: 20%;
   min-width: 11.25rem;
   height: 9.375rem;
@@ -906,7 +907,8 @@ width: 1.25rem;
 
 }
 
-.footer p, .footer a {
+.footer p,
+.footer a {
   color: black;
   text-decoration: none;
   font-size: 1rem;
@@ -917,7 +919,7 @@ width: 1.25rem;
   transition: color 0.3s ease;
 }
 
-.section a:hover{
+.section a:hover {
   color: #1b5e20;
 }
 .footer .social-icons a {
