@@ -723,9 +723,9 @@ margin-bottom: 1.875rem;
 /* SECTION 5 */
 
 .section5 {
-
   margin-top: 10.5rem;
   height: 43.75rem;
+  margin-bottom: 15.5rem;
   max-width: 100vw;
   text-align: center;
    position: relative;
@@ -741,7 +741,6 @@ margin-bottom: 1.875rem;
 
 /* SECTION 6*/
 .section6 {
-  
   padding: 3.125rem;
   text-align: center;
   margin-top: 10.5rem;
@@ -758,7 +757,7 @@ margin-bottom: 1.875rem;
 }
 
 .section6 .QnA {
-
+  background-color: #f9c23c;
   max-width: 100vw;
   display: flex;
   flex-direction: column;
