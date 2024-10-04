@@ -25,8 +25,10 @@ align-items: center;
 }
 
 nav li{
+
     height:3.75rem;
     margin-top: 0.625rem;
+
 }
 
 nav a{
@@ -115,7 +117,7 @@ label{
     border-radius: 0.1875rem;
     border: 0.0625rem solid  #1B5E20; ;
     font-size: 1rem;
-    box-sizing: border-box;  /* Ensures padding is included in width */
+    box-sizing: border-box;  
 }
 
 .exp-cvv{
