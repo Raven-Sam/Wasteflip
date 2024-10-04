@@ -401,34 +401,25 @@ nav a button {
   line-height: 1.5;
 }
 
-span{
-    background-image: conic-gradient(
-  
-      #1b5e20,
-      #ff0000,
-      #3b5998,
-      orange,
-      #1b5e20
+span {
+  background-image: conic-gradient(#1b5e20, #ff0000, #3b5998, orange, #1b5e20);
+  background-size: 400% 400%;
+  animation: spananimation 5s infinite;
+  border-radius: 0.1875rem;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  transition: background-image 0.3s ease, color 0.3s ease;
+}
 
-    );
-    background-size: 400% 400%;
-    animation: spananimation 5s infinite;
-    border-radius: 0.1875rem;
-    -webkit-text-fill-color: transparent; 
-    -webkit-background-clip: text;
-    transition: background-image 0.3s ease, color 0.3s ease;
+@keyframes spananimation {
+  0% {
+    background-position: 0% -50%;
   }
-  
-  @keyframes spananimation {
-    0% {
-      background-position: 0% -50%;
-    }
-    50% {
-      background-position: -100% 50%;
-    }
-    100% {
-      background-position: 50% 0%;
-    }
+  50% {
+    background-position: -100% 50%;
+  }
+  100% {
+    background-position: 50% 0%;
   }
 }
 
@@ -757,7 +748,7 @@ span{
   margin-bottom: 3.375rem;
   position: relative;
 }
-.faq{
+.faq {
   margin-top: 3.75rem;
   position: absolute;
   right: 43.75rem;
