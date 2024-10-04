@@ -308,11 +308,6 @@ select {
   line-height: 5rem;
 }
 
-/* Dispose page css */
-.dispose-hero {
-  background-image: url(/IMAGES/dispose-hero.png);
-}
-
 /* FAQ */
 .questionbox-cont {
   display: flex;
@@ -359,13 +354,13 @@ select {
   font-weight: 500;
   margin-top: 1rem;
 }
-input {
+.newsletter input {
   background-color: #f5f5f5;
   padding: 1rem;
   border: none;
   font-size: 1rem;
 }
-form {
+.newsletter form {
   display: flex;
   height: 70px;
 }
@@ -463,6 +458,83 @@ footer a {
   margin-bottom: -4rem;
 }
 
+/* Dispose page css */
+.dispose-hero {
+  background-image: url(/IMAGES/dispose-hero.png);
+}
+
+/* Schedule pickup page */
+.schedule-hero {
+  background-image: url(/IMAGES/schedule-hero.png);
+}
+.form-wrap {
+  display: flex;
+  gap: 10px;
+  margin: 2rem 0 3rem;
+}
+.Schedule-form {
+  margin: 2rem 3.5rem 3rem;
+}
+.form-wrap label {
+  display: block;
+}
+
+.form-wrap label,
+.freq label,
+.Schedule {
+  color: #1b5e20;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.Schedule-cont p {
+  color: #1b5e20;
+  margin: 1rem 0 4rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.form-wrap div {
+  width: 45%;
+}
+.form-input {
+  padding: 1.5rem 2rem 1.5rem 1rem;
+  width: 95%;
+  background-color: #fff;
+  color: #777777;
+  border: 2px solid #777;
+  border-radius: 10px;
+  font-size: larger;
+}
+
+input[type="radio"] {
+  padding: 5px;
+  -webkit-appearance: none;
+  outline: 2px solid #777;
+  outline-offset: 1px;
+  margin-right: 10px;
+  border-radius: 1px;
+  height: 20px;
+  width: 20px;
+}
+
+input[type="radio"]:checked {
+  display: inline-block;
+  background-color: #111111;
+  outline-offset: 3px;
+}
+.freq {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 2rem 0 5rem;
+}
+.freq label {
+  font-size: 1.5rem;
+}
+.subscribe {
+  display: flex;
+}
 /* @media only screen and (max-width: 992px) {
   .testimonial-card {
     width: 48%;
