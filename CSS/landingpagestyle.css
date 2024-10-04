@@ -391,11 +391,12 @@ nav li:first-child {
 span{
     background-image: conic-gradient(
   
-      #4caf50,
+      #1b5e20,
       #ff0000,
       #3b5998,
-      #ffff00,
-      #4caf50
+      orange,
+      #1b5e20
+
     );
     background-size: 400% 400%;
     animation: spananimation 5s infinite;
@@ -404,15 +405,7 @@ span{
     -webkit-background-clip: text;
     transition: background-image 0.3s ease, color 0.3s ease;
   }
-  span {
-    background-image: conic-gradient(#4caf50, #ff0000, #3b5998, #ffff00, #4caf50);
-    background-size: 400% 400%;
-    animation: spananimation 5s infinite;
-    border-radius: 3px;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    transition: background-image 0.3s ease, color 0.3s ease;
-  }
+  
   @keyframes spananimation {
     0% {
       background-position: 0% -50%;
