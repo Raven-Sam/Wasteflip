@@ -1,4 +1,6 @@
 import React, { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
+import Button from "../button";
 import "./header.css";
 
 const Header = () => {
@@ -37,12 +39,12 @@ const Header = () => {
       <NavLinks
         ref={navLinksRef}
         links={[
-          { href: "/PAGES/homepage.html", label: "Home" },
-          { href: "/PAGES/recycle.html", label: "Recycle Center" },
-          { href: "/PAGES/schedule.html", label: "Pickup Schedule" },
-          { href: "#contact-us", label: "Contact Us" },
+          { to: "/home", label: "Home" },
+          { to: "/recycle", label: "Recycle Center" },
+          { to: "/schedule", label: "Pickup Schedule" },
+          { to: "/#contact-us", label: "Contact Us" },
         ]}
-        button={{ href: "/PAGES/SIGNUP-PAGE.HTML", label: "Sign Up" }}
+        button={{ to: "/signup", label: "Sign Up" }}
       />
     </nav>
   );
@@ -62,13 +64,13 @@ const NavLinks = React.forwardRef(({ links, button }, ref) => (
   <ul ref={ref} className="nav-links" id="nav-links">
     {links.map((link, index) => (
       <li className="link" key={index}>
-        <a href={link.href}>{link.label}</a>
+        <Link to={link.to}>{link.label}</Link>
       </li>
     ))}
     <li>
-      <a href={button.href}>
-        <button className="nav-button">{button.label}</button>
-      </a>
+      <Link to={button.to}>
+        <Button classname="nav-button" text={button.label} />
+      </Link>
     </li>
   </ul>
 ));

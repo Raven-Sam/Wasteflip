@@ -3,7 +3,7 @@ import "./footer.css";
 
 const Footer = () => (
   <footer className="footer">
-    <div className="container">
+    <div className="footer-container">
       <CompanyInfo />
       <FooterLinks
         title="Company"
@@ -52,7 +52,7 @@ const Footer = () => (
 );
 
 const CompanyInfo = () => (
-  <div className="section1">
+  <div className="section-1">
     <h3>WasteFlip</h3>
     <div className="wasteflip-info">
       <p>
@@ -64,7 +64,7 @@ const CompanyInfo = () => (
 );
 
 const FooterLinks = ({ title, links }) => (
-  <div className="section2">
+  <div className="section-2">
     <h4>{title}</h4>
     {links.map((link, index) => (
       <p key={index}>
@@ -75,7 +75,7 @@ const FooterLinks = ({ title, links }) => (
 );
 
 const SocialMedia = ({ title, icons }) => (
-  <div className="section4">
+  <div className="section-4">
     <h4>{title}</h4>
     <div className="social-icons">
       {icons.map((icon, index) => (

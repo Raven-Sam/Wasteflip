@@ -1,19 +1,21 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
-import Header from "./components/header/header";
-import Footer from "./components/footer/footer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LandingPage from "./pages/Landingpage";
+import Layout from "./pages/layout";
 import "./App.css";
+import Home from "./pages/Home";
 
 function App() {
   return (
-    <>
-      <Header />
-
-      <Footer />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<LandingPage />} />
+          <Route path="home" element={<Home />} />
+          {/*<Route path="contact" element={<Contact />} />
+          <Route path="*" element={<NoPage />} /> */}
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

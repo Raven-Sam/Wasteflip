@@ -4,7 +4,7 @@ footer {
   flex-direction: column;
   padding: 4rem 4rem 0;
 }
-.container {
+.footer-container {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -12,14 +12,14 @@ footer {
   margin-bottom: 4rem;
   font-weight: 500;
 }
-.section1 {
+.section-1 {
   width: 28%;
 }
-.section2 {
+.section-2 {
   width: 15%;
   line-height: 2.5rem;
 }
-.section4 {
+.section-4 {
   width: 22%;
   display: flex;
   flex-direction: column;
@@ -38,7 +38,7 @@ footer {
   color: #1e1e1e;
   font-family: "Mochiy Pop One", "sans-serif";
 }
-.section2 h4 {
+.section-2 h4 {
   font-size: 1.5rem;
 }
 footer a {
@@ -92,14 +92,14 @@ footer a:hover {
   footer {
     padding: 2rem;
   }
-  .section1 {
+  .section-1 {
     width: 45%;
     margin-bottom: 2rem;
   }
-  .section2 {
+  .section-2 {
     width: 30%;
   }
-  .section4 {
+  .section-4 {
     width: 35%;
   }
   .bottom-left {
