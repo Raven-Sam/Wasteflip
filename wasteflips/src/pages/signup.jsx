@@ -36,7 +36,7 @@ const SignupPage = () => {
             description="Let's get you all set up so you can access your personal account"
           />
 
-          <form action="#">
+          <form action="#" className="signup-form">
             <div className="form-ct">
               <InputField
                 type="text"
@@ -94,7 +94,7 @@ const SignupPage = () => {
             </div>
 
             <div className="signup-actions">
-              <Link to="/homepage">
+              <Link to="/home">
                 <button type="submit">Create Account</button>
               </Link>
               <div className="login-link">

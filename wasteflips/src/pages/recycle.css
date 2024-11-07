@@ -1,0 +1,490 @@
+h3 {
+  font-size: 4rem;
+  color: #1b5e20;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.recycle-container {
+  padding: 0 5%;
+}
+.recycle-hero {
+  background-image: url(../IMAGES/recycle-hero.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  margin: 0 -5.5%;
+}
+
+.recycle-hero h2 {
+  font-size: 4rem;
+  max-width: 70%;
+  color: #ffffff;
+}
+.recycle-hero p {
+  max-width: 32%;
+}
+.selection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 4.5rem;
+  margin-bottom: 5rem;
+}
+.type {
+  background-color: #f2f2f2;
+  border-radius: 100px;
+  padding: 1.5rem 3rem;
+  padding-left: 30px;
+  width: 300px;
+}
+.type h4 {
+  margin-bottom: 0.5rem;
+}
+.type p {
+  font-size: smaller;
+}
+select {
+  border: none;
+  background-color: #f2f2f2;
+}
+.location {
+  background-color: #fff;
+  position: relative;
+  right: 5rem;
+}
+.scale,
+.category {
+  display: flex;
+  gap: 1.25rem;
+}
+.category {
+  flex-wrap: wrap;
+}
+.scale h4 {
+  color: #1b5e20;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.scale h4:first-of-type {
+  border-bottom: 1px solid #1b5e20;
+}
+
+.category p {
+  border: 0.125rem solid #4caf50;
+  padding: 0.5rem 1.2rem;
+  margin-bottom: 3rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1e1e1e;
+}
+
+.waste-category,
+.drop-Offs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* gap: 56px; */
+}
+.waste-type,
+.area {
+  width: 30%;
+}
+.waste-type img,
+.area img {
+  width: 100%;
+}
+.green-bar {
+  color: #ffeb3b;
+  background-color: #1b5e20;
+  position: relative;
+  bottom: 3rem;
+  text-align: center;
+  padding: 1rem 0;
+  border-radius: 0 0 1.5625rem 1.5625rem;
+}
+.carousel-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+  gap: 5px;
+}
+.carousel-bar div {
+  background-color: #cbfbce;
+  width: 0.9375rem;
+  height: 0.5rem;
+  border-radius: 0.3125rem;
+}
+
+.carousel-bar div:first-of-type {
+  background-color: #1b5e20;
+  width: 1.5625rem;
+}
+
+.area h5 {
+  font-size: 2rem;
+  color: #1b5e20;
+  margin-bottom: 1rem;
+}
+.area p {
+  color: #777777;
+  font-weight: 600;
+}
+.area p .fa {
+  transform: rotate(-90deg);
+  color: #777777;
+}
+
+.drop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6rem;
+}
+.drop h3 {
+  align-self: flex-start;
+}
+.drop-Offs {
+  margin-bottom: 3rem;
+}
+.button {
+  background-color: #1b5e20;
+  color: #ffffff;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  border: none;
+  gap: 0.625rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.testimonials {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+.testimonials h5 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.testimonials h3 {
+  width: 80%;
+  text-align: center;
+}
+.test-wrap {
+  display: flex;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.testimonial-card {
+  background: #ffeb3b;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 1.5625rem;
+  padding: 2rem;
+  width: 48%;
+  color: #1b5e20;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.testimonial-card p {
+  background: url(/Images/Vector.png);
+  background-repeat: no-repeat;
+  text-align: center;
+  font-size: 26.6992px;
+  margin-bottom: 1rem;
+  line-height: 2.5rem;
+}
+.card-top {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.card-top h5 {
+  font-size: 2.5rem;
+}
+
+/* Dispose page css */
+.dispose-hero {
+  background-image: url(/IMAGES/dispose-hero.png);
+}
+
+/* Schedule pickup page */
+.schedule-hero {
+  background-image: url(/IMAGES/schedule-hero.png);
+}
+.form-wrap {
+  margin: 2rem 0 3rem;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+.Schedule-form {
+  margin: 2rem 3.5rem 3rem;
+}
+.form-wrap label {
+  display: block;
+}
+
+.form-wrap label,
+.freq label,
+.Schedule,
+.form-group label {
+  color: #1b5e20;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.Schedule {
+  font-size: 2rem;
+}
+.instruction {
+  color: #1b5e20;
+  margin: 1rem 0 4rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.form-wrap div {
+  flex: 1 1 calc(50% - 1rem);
+  display: flex;
+  flex-direction: column;
+}
+.form-input {
+  width: 100%;
+  background-color: #fff;
+  color: #777777;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid #777;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input[type="radio"] {
+  padding: 5px;
+  -webkit-appearance: none;
+  outline: 2px solid #777;
+  outline-offset: 1px;
+  margin-right: 10px;
+  border-radius: 1px;
+  height: 20px;
+  width: 20px;
+}
+
+input[type="radio"]:checked {
+  display: inline-block;
+  background-color: #111111;
+  outline-offset: 3px;
+}
+.freq {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 2rem 0 5rem;
+}
+.freq label {
+  font-size: 1.5rem;
+}
+.subscribe {
+  display: flex;
+}
+.form-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: space-between;
+}
+.form-group {
+  flex: 1 1 calc(50% - 1rem);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.form-group input {
+  width: 100%;
+  background-color: #fff;
+  color: #777777;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid #777;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #4caf50; /* Green border on focus */
+  outline: none;
+}
+.subscribe {
+  height: 4rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+.subscribe button {
+  border-radius: 5px;
+}
+.call {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+}
+.call p {
+  font-size: 1rem;
+  color: #1b5e20;
+}
+.sub-bot {
+  color: #1b5e20;
+  margin: 2rem 0 4rem;
+  width: 90%;
+  margin-left: 2rem;
+}
+
+@media only screen and (max-width: 992px) {
+  /* testimonial */
+  .test-wrap {
+    justify-content: center;
+  }
+  .testimonial-card {
+    width: 70%;
+  }
+  .card-top h5 {
+    font-size: 32px;
+  }
+  .newsletter h2 {
+    font-size: 3rem;
+  }
+  .newsletter p {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  h3 {
+    font-size: 3rem;
+  }
+  .card-top img {
+    width: 100%;
+    height: auto;
+  }
+  .waste-type,
+  .area {
+    width: 45%;
+  }
+  .form-group {
+    flex: 1 1 100%;
+  }
+
+  /* testimonial */
+  .test-wrap {
+    justify-content: center;
+  }
+  .testimonial-card {
+    width: 80%;
+  }
+  .questionbox-cont {
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  .question-box {
+    width: 80%;
+  }
+  /* newsletter */
+  .newsletter {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .newsletter p {
+    margin-bottom: 2rem;
+  }
+
+  .freq {
+    flex-direction: column;
+    width: 90%;
+    margin: 2rem 0;
+    align-items: flex-start;
+    margin-left: 2rem;
+  }
+
+  .freq label {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .form-group label,
+  .form-wrap label {
+    font-size: 1rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  .instruction {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .selection {
+    margin-bottom: -2rem;
+  }
+  .Schedule-form {
+    margin: 1rem;
+  }
+  .area h5,
+  .testimonials h5 {
+    font-size: 1.5rem;
+  }
+  .category p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .button {
+    font-size: 1rem;
+  }
+  .waste-category,
+  .drop-Offs {
+    justify-content: center;
+  }
+  .waste-type,
+  .area {
+    width: 70%;
+  }
+  .carousel-bar:first-of-type {
+    display: none;
+  }
+  .testimonial-card {
+    width: 90%;
+  }
+  .card-top {
+    flex-direction: column;
+  }
+}

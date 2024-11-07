@@ -768,13 +768,16 @@ span {
   margin-top: 1.25rem;
   margin-right: 2.5rem;
   max-width: 31.25rem;
-  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.2);
   display: flex;
+  align-items: center;
+  height: 4.375rem;
 }
 
 .newsletter input[type="email"] {
   padding: 1.25rem;
+  height: 100%;
   border-radius: 0.3125rem;
+  margin-top: 20px;
   border: none;
   width: 18.75rem;
   outline: none;
@@ -782,6 +785,8 @@ span {
 
 .newsletter button[type="submit"] {
   background-color: #1b5e20;
+  width: 10rem;
+  height: 100%;
   color: #ffffff;
   padding: 1.25rem 1.25rem;
   border-radius: 0.3125rem;

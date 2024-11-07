@@ -1,5 +1,7 @@
 import React from "react";
 import Button from "../components/button";
+import Hero from "../components/hero";
+import { Link } from "react-router-dom";
 
 const audienceData = [
   {
@@ -138,10 +140,7 @@ const faqData = [
 const LandingPage = () => {
   return (
     <div>
-      <HeroSection
-        text="Simplifying Waste Management for a Cleaner Future"
-        description="We prioritize sustainability and convenience. Discover how easy it is toschedule and find recycling services near you."
-      />
+      <HeroSection />
       <AudienceSection />
       <ServicesSection />
       <PickupStepsSection />
@@ -153,16 +152,17 @@ const LandingPage = () => {
 };
 
 // Reusable subcomponents
-const HeroSection = ({ text, description }) => (
+const HeroSection = () => (
   <div className="hero-content">
-    <div className="content-text">
-      <h2>{text}</h2>
-      <p>{description}</p>
-    </div>
+    <Hero
+      classname="content-text"
+      text="Simplifying Waste Management for a Cleaner Future"
+      description="We prioritize sustainability and convenience. Discover how easy it is toschedule and find recycling services near you."
+    />
     <div className="content-bt">
-      <a href="#">
+      <Link to="/schedule">
         <Button classname="pickup-bt" text="Schedule a Pickup" />
-      </a>
+      </Link>
       <a href="#learn-more">
         <Button classname="learn-bt" text="Learn More" />
       </a>
@@ -210,9 +210,9 @@ const ServicesSection = () => (
         </p>
         <ServiceOptions />
         <div className="section3-buttons">
-          <a href="/PAGES/LOGIN.html">
+          <Link to="/login">
             <Button classname="pickup-bt" text="Dispose Now" />
-          </a>
+          </Link>
           <a href="#learn-more">
             <Button classname="learn-bt" text="Learn More" />
           </a>
@@ -283,7 +283,7 @@ const IndustriesSection = () => (
   </section>
 );
 
-const FAQSection = () => (
+export const FAQSection = () => (
   <section className="section6">
     <div className="QnA">
       <h2>
@@ -305,7 +305,7 @@ const FAQItem = ({ question, answer }) => (
   </div>
 );
 
-const NewsletterSection = () => (
+export const NewsletterSection = () => (
   <div className="newsletter">
     <div className="newsletter-ct">
       <div className="newsletter-text-ct">
@@ -316,7 +316,24 @@ const NewsletterSection = () => (
       </div>
       <form>
         <input type="email" placeholder="Enter your email address" required />
-        <button type="submit">Subscribe</button>
+        <button type="submit">
+          Subscribe
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13 9L16 12M16 12L13 15M16 12L8 12M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+              stroke="#ffffff"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        </button>
       </form>
     </div>
   </div>

@@ -13,7 +13,7 @@ const LoginPage = () => {
             description="Login to access your WasteFlip account"
           />
 
-          <form action="#">
+          <form action="#" className="signup-form">
             <div className="form-ct">
               <InputField
                 type="email"
@@ -42,7 +42,7 @@ const LoginPage = () => {
             </div>
 
             <div className="signup-actions">
-              <Link to="/homepage">
+              <Link to="/home">
                 <button type="submit">Login</button>
               </Link>
               <div className="login-link">
