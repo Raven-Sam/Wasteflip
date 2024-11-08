@@ -103,7 +103,8 @@ body {
   margin-bottom: 1rem;
 }
 
-p a {
+p a,
+a {
   color: #1b5e20;
   text-decoration: none;
 }
@@ -124,4 +125,21 @@ p a {
 
 .verify-btn:hover {
   background-color: #0069d9;
+}
+.done {
+  background-color: #1b5e20;
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.done a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.done:hover {
+  background-color: green;
 }
