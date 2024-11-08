@@ -7,6 +7,7 @@ import SignupPage from "./pages/signup";
 import LoginPage from "./pages/login";
 import Recycle from "./pages/recycle";
 import Dispose from "./pages/dispose";
+import Otp from "./pages/otp";
 
 function App() {
   return (
@@ -19,8 +20,10 @@ function App() {
           <Route path="dispose" element={<Dispose />} />
         </Route>
         {/* Routes without layout */}
+
         <Route path="/signup" element={<SignupPage />} />
         <Route path="/login" element={<LoginPage />} />
+        <Route path="/otp" element={<Otp />} />
       </Routes>
     </BrowserRouter>
   );
