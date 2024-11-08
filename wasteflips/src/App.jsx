@@ -9,6 +9,7 @@ import Recycle from "./pages/recycle";
 import Dispose from "./pages/dispose";
 import Otp from "./pages/otp";
 import Success from "./pages/success";
+import Payment from "./pages/payment";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="home" element={<Home />} />
           <Route path="recycle" element={<Recycle />} />
           <Route path="dispose" element={<Dispose />} />
+          <Route path="payment" element={<Payment />} />
         </Route>
         {/* Routes without layout */}
 

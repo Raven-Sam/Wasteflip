@@ -1,7 +1,7 @@
-body {
+.otp-body {
   height: auto;
   width: 100%;
-  background: rgba(0, 0, 0, 0.5) url(../IMAGES/recycle-waste-management.jpg);
+  background: rgba(0, 0, 0, 0.5) url(/IMAGES/recycle-waste-management.jpg);
   background-blend-mode: darken;
   background-attachment: fixed;
   background-size: cover;
@@ -103,7 +103,7 @@ body {
   margin-bottom: 1rem;
 }
 
-p a,
+.otp-ct p a,
 a {
   color: #1b5e20;
   text-decoration: none;
