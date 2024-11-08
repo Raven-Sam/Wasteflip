@@ -145,7 +145,7 @@ const LandingPage = () => {
       <ServicesSection />
       <PickupStepsSection />
       <IndustriesSection />
-      <FAQSection />
+      <FAQSection faqData={faqData} />
       <NewsletterSection />
     </div>
   );
@@ -283,7 +283,7 @@ const IndustriesSection = () => (
   </section>
 );
 
-export const FAQSection = () => (
+export const FAQSection = ({ faqData }) => (
   <section className="section6">
     <div className="QnA">
       <h2>

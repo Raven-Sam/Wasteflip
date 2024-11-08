@@ -28,6 +28,50 @@ const WasteDropOff = ({ imgSrc, title, distance }) => (
     </p>
   </div>
 );
+export const DropOffs = ({ dropOffs }) => (
+  <div className="drop">
+    <h3>Nearby Waste Drop-Offs</h3>
+    <div className="drop-Offs">
+      {dropOffs.map((dropOff, index) => (
+        <WasteDropOff
+          key={index}
+          imgSrc={dropOff.imgSrc}
+          title={dropOff.title}
+          distance={dropOff.distance}
+        />
+      ))}
+    </div>
+    <button className="button">
+      Show Map
+      <svg
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fillRule="evenodd"
+          clipRule="evenodd"
+          d="M12 1.58582L8 5.58582V18.4142L12 14.4142V1.58582Z"
+          fill="#ffffff"
+        />
+        <path
+          fillRule="evenodd"
+          clipRule="evenodd"
+          d="M3.70711 3.29292C3.42111 3.00692 2.99099 2.92137 2.61732 3.07615C2.24364 3.23093 2 3.59557 2 4.00003V14C2 14.2652 2.10536 14.5196 2.29289 14.7071L6 18.4142V5.58582L3.70711 3.29292Z"
+          fill="#ffffff"
+        />
+        <path
+          fillRule="evenodd"
+          clipRule="evenodd"
+          d="M17.7071 5.29292L14 1.58582V14.4142L16.2929 16.7071C16.5789 16.9931 17.009 17.0787 17.3827 16.9239C17.7564 16.7691 18 16.4045 18 16V6.00003C18 5.73481 17.8946 5.48046 17.7071 5.29292Z"
+          fill="#ffffff"
+        />
+      </svg>
+    </button>
+  </div>
+);
 
 const TestimonialCard = ({ imgSrc, name, location, text }) => (
   <div className="testimonial-card">
@@ -41,7 +85,42 @@ const TestimonialCard = ({ imgSrc, name, location, text }) => (
   </div>
 );
 
+export const Testimonials = ({ testimonials }) => (
+  <div className="testimonials">
+    <h5>What Our Customers Feel About Us</h5>
+    <h3>
+      We Devote Time and Effort to Provide Quality Services to Our Customers
+    </h3>
+    <div className="test-wrap">
+      {testimonials.map((testimonial, index) => (
+        <TestimonialCard
+          key={index}
+          imgSrc={testimonial.imgSrc}
+          name={testimonial.name}
+          location={testimonial.location}
+          text={testimonial.text}
+        />
+      ))}
+    </div>
+  </div>
+);
 const Recycle = () => {
+  const faqData = [
+    {
+      question: "How do I dispose off hazardous Materials?",
+      answer:
+        "Hazardous materials such as batteries, chemicals, paints, or electronics require special handling. We’ll connect you with certified waste management services that handle these items safely and in compliance with local environmental regulations.",
+    },
+    {
+      question: "What are the hours of the collection?",
+      answer: "Service hours are Monday - Friday from 8:00 am to 6:00 pm.",
+    },
+    {
+      question: "How do I recycle used motor oil, filters and other fluids?",
+      answer:
+        "Place one-gallon screw-top containers, curbside beside the carts you have set out.",
+    },
+  ];
   // Sample data arrays
   const wasteTypes = [
     { link: "/dispose", imgSrc: "/IMAGES/plastic.png", label: "Plastic" },
@@ -127,71 +206,11 @@ const Recycle = () => {
           />
         ))}
       </div>
+      <DropOffs dropOffs={dropOffs} />
 
-      {/* Nearby Waste Drop-Offs */}
-      <div className="drop">
-        <h3>Nearby Waste Drop-Offs</h3>
-        <div className="drop-Offs">
-          {dropOffs.map((dropOff, index) => (
-            <WasteDropOff
-              key={index}
-              imgSrc={dropOff.imgSrc}
-              title={dropOff.title}
-              distance={dropOff.distance}
-            />
-          ))}
-        </div>
-        <button className="button">
-          Show Map
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 20 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fillRule="evenodd"
-              clipRule="evenodd"
-              d="M12 1.58582L8 5.58582V18.4142L12 14.4142V1.58582Z"
-              fill="#ffffff"
-            />
-            <path
-              fillRule="evenodd"
-              clipRule="evenodd"
-              d="M3.70711 3.29292C3.42111 3.00692 2.99099 2.92137 2.61732 3.07615C2.24364 3.23093 2 3.59557 2 4.00003V14C2 14.2652 2.10536 14.5196 2.29289 14.7071L6 18.4142V5.58582L3.70711 3.29292Z"
-              fill="#ffffff"
-            />
-            <path
-              fillRule="evenodd"
-              clipRule="evenodd"
-              d="M17.7071 5.29292L14 1.58582V14.4142L16.2929 16.7071C16.5789 16.9931 17.009 17.0787 17.3827 16.9239C17.7564 16.7691 18 16.4045 18 16V6.00003C18 5.73481 17.8946 5.48046 17.7071 5.29292Z"
-              fill="#ffffff"
-            />
-          </svg>
-        </button>
-      </div>
+      <Testimonials testimonials={testimonials} />
 
-      {/* Testimonials */}
-      <div className="testimonials">
-        <h5>What Our Customers Feel About Us</h5>
-        <h3>
-          We Devote Time and Effort to Provide Quality Services to Our Customers
-        </h3>
-        <div className="test-wrap">
-          {testimonials.map((testimonial, index) => (
-            <TestimonialCard
-              key={index}
-              imgSrc={testimonial.imgSrc}
-              name={testimonial.name}
-              location={testimonial.location}
-              text={testimonial.text}
-            />
-          ))}
-        </div>
-      </div>
-
-      <FAQSection />
+      <FAQSection faqData={faqData} />
       <NewsletterSection />
     </div>
   );
