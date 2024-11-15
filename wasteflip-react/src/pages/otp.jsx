@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "./otp.css";
+import "./css/otp.css";
 
 const Otp = () => {
   const navigate = useNavigate();

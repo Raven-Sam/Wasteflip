@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./signup.css";
+import "./css/signup.css";
 
 const LeftContent = ({ text, description }) => (
   <>
@@ -80,7 +80,13 @@ const SignupPage = () => {
             </div>
 
             <div className="terms-conditions">
-              <input type="checkbox" id="terms" name="terms" required />
+              <input
+                type="checkbox"
+                id="terms"
+                name="terms"
+                className="checkbox"
+                required
+              />
               <label htmlFor="terms">
                 I agree to the{" "}
                 <Link to="/terms" className="T">
@@ -95,7 +101,9 @@ const SignupPage = () => {
 
             <div className="signup-actions">
               <Link to="/home">
-                <button type="submit" className="account">Create Account</button>
+                <button type="submit" className="account">
+                  Create Account
+                </button>
               </Link>
               <div className="login-link">
                 <p>

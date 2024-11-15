@@ -2,7 +2,7 @@ import React from "react";
 import Hero from "../components/hero";
 import { FAQSection, NewsletterSection } from "./Landingpage";
 import { Link } from "react-router-dom";
-import "./recycle.css";
+import "./css/recycle.css";
 
 // Reusable components for different elements
 const WasteType = ({ link, imgSrc, label }) => (
