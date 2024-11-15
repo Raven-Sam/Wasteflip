@@ -1,0 +1,104 @@
+/* * {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 100vh;
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+} */
+
+.card-info {
+  margin: 4.375rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: #1b5e20;
+}
+#card-type {
+  font-weight: 400;
+}
+.card-icons {
+  display: flex;
+  gap: 3rem;
+}
+.card-icons > img {
+  height: 4.375rem;
+}
+
+.payment-section {
+  margin: 4.375rem;
+}
+.payment-info {
+  margin: 4.375rem;
+  color: #1b5e20;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+
+.input-group label {
+  font-weight: bold;
+}
+.input-group input {
+  width: 100%;
+  height: 3.5rem;
+  padding: 0.625rem;
+  margin-bottom: 1.25rem;
+  border-radius: 0.1875rem;
+  border: 0.0625rem solid #1b5e20;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.exp-cvv {
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+}
+
+.exp-cvv-input {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.expiration-cvv,
+.exp-cvv-input {
+  width: 48%;
+}
+
+.payment-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.25rem;
+}
+
+.cancel-btn,
+.pay-btn {
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.1875rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background-color: #fff;
+  color: #1b5e20;
+}
+
+.pay-btn {
+  background-color: #1b5e20;
+  color: #ffeb3b;
+}
+.cancel-btn a,
+.pay-btn a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.cancel-btn:hover,
+.pay-btn:hover {
+  background-color: #0069d9;
+}
