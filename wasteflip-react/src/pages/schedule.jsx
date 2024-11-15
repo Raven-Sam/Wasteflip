@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./recycle.css";
+import "./css/recycle.css";
 
 const renderInput = (label, id, placeholder, type = "text") => (
   <div className="form-group">

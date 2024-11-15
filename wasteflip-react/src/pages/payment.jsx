@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "./payment.css";
+import "./css/payment.css";
 
 const Payment = () => {
   const navigate = useNavigate();

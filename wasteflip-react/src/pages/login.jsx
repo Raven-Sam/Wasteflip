@@ -1,4 +1,4 @@
-import "./signup.css";
+import "./css/signup.css";
 import { LeftContent, InputField, SocialButton } from "./signup";
 import { Link } from "react-router-dom";
 
@@ -43,13 +43,15 @@ const LoginPage = () => {
 
             <div className="signup-actions">
               <Link to="/home">
-                <button type="submit">Login</button>
+                <button type="submit" className="account">
+                  Login
+                </button>
               </Link>
               <div className="login-link">
                 <p>
                   Don&apos;t have an account?{" "}
                   <Link to="/signup" className="login-sty">
-                    Login
+                    Signup
                   </Link>
                 </p>
               </div>

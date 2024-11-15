@@ -1,5 +1,5 @@
 import React from "react";
-import "./otp.css";
+import "./css/otp.css";
 import { Link } from "react-router-dom";
 
 const Success = () => {

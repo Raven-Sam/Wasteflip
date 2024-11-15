@@ -89,10 +89,10 @@ p {
 legend {
   color: #4caf50;
 }
-signup-form {
+.signup-form {
   margin-top: 0.625rem;
   width: 100%;
-  height: 30rem;
+  height: 27rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -137,20 +137,14 @@ fieldset {
 .Email {
   margin-right: 0.625rem;
 }
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="password"] {
+.form-ct input {
   width: 100%;
   height: 70%;
   border: none;
   outline: none;
   border-radius: none;
 }
-input[type="checkbox"] {
-  margin-bottom: 0.625rem;
-  margin-left: 0.625rem;
-}
+
 .T,
 .P {
   color: #ff0000;
@@ -189,6 +183,7 @@ input[type="checkbox"] {
 }
 .social-btn {
   width: 7rem;
+  padding: 0.5rem 0;
   border: 1px solid #1b5e20;
 }
 #fb {
@@ -272,6 +267,7 @@ input[type="checkbox"] {
 .checkbox {
   width: auto;
   height: auto;
+  margin: 0.625rem;
 }
 .forgot-password {
   color: #f05a24;
