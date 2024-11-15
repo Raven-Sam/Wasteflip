@@ -12,17 +12,6 @@ import {
   SignupPage,
   Success,
 } from "./pages";
-// import LandingPage from "./pages/Landingpage";
-// import Layout from "./pages/layout";
-// import Home from "./pages/Home";
-// import SignupPage from "./pages/signup";
-// import LoginPage from "./pages/login";
-// import Recycle from "./pages/recycle";
-// import Dispose from "./pages/dispose";
-// import Otp from "./pages/otp";
-// import Success from "./pages/success";
-// import Payment from "./pages/payment";
-// import Schedule from "./pages/schedule";
 
 function App() {
   return (
