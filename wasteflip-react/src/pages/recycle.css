@@ -33,7 +33,7 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
+  left: 18.75rem;
   bottom: 4.5rem;
   margin-bottom: 5rem;
 }
@@ -230,6 +230,7 @@ select {
 .Schedule-cont {
   margin-top: 2rem;
 }
+
 .form-wrap {
   margin: 2rem 0 3rem;
   max-width: 100%;
