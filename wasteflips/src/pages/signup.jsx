@@ -95,7 +95,7 @@ const SignupPage = () => {
 
             <div className="signup-actions">
               <Link to="/home">
-                <button type="submit">Create Account</button>
+                <button type="submit" className="account">Create Account</button>
               </Link>
               <div className="login-link">
                 <p>

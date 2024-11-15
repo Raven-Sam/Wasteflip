@@ -156,7 +156,7 @@ input[type="checkbox"] {
   color: #ff0000;
 }
 
-button[type="submit"] {
+.account {
   width: 100%;
   margin-top: 1.25rem;
   padding: 0.625rem 1.25rem;
@@ -167,11 +167,11 @@ button[type="submit"] {
   border-radius: 0.1875rem;
   cursor: pointer;
 }
-button:hover {
+.account:hover {
   background-position: 100% 50%;
   transition: background-position 0.3s ease;
 }
-button:active {
+.account:active {
   background-position: 0% 50%;
   transition: background-position 0.3s ease;
 }

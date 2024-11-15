@@ -1,7 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LandingPage from "./pages/Landingpage";
 import Layout from "./pages/layout";
-import "./App.css";
 import Home from "./pages/Home";
 import SignupPage from "./pages/signup";
 import LoginPage from "./pages/login";
@@ -10,6 +9,7 @@ import Dispose from "./pages/dispose";
 import Otp from "./pages/otp";
 import Success from "./pages/success";
 import Payment from "./pages/payment";
+import Schedule from "./pages/schedule";
 
 function App() {
   return (
@@ -21,6 +21,7 @@ function App() {
           <Route path="recycle" element={<Recycle />} />
           <Route path="dispose" element={<Dispose />} />
           <Route path="payment" element={<Payment />} />
+          <Route path="schedule" element={<Schedule />} />
         </Route>
         {/* Routes without layout */}
 

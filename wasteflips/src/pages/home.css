@@ -1,102 +1,12 @@
 * {
-  margin: 0;
   padding: 0;
-  font-family: "Inter", sans-serif;
+  margin: 0;
+  box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
 body {
-  min-width: 100vw;
-  max-height: 100%;
-}
-nav {
-  width: auto;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 1.875rem;
-  height: 5rem;
-  background-image: radial-gradient(#f9c23c, #4caf50, white);
-  animation: Nav-animation 3s;
-  border-radius: 0.1875rem;
-  background-size: 400% 400%;
-  transition: background-image 0.3s ease, color 3s ease;
-  box-shadow: 0.1875rem 0.1875rem 0.3125rem rgba(0, 0, 0, 0.1);
-}
-.logo {
-  color: #1b5e20;
-  font-size: 2.5rem;
-  font-family: "Mochiy Pop One", sans-serif;
-  margin-right: auto;
-}
-@keyframes Nav-animation {
-  0% {
-    background-position: 0% -50%;
-  }
-  50% {
-    background-position: -100% 50%;
-  }
-  100% {
-    background-position: 50% 0%;
-  }
-}
-nav ul {
-  width: 100%;
-  list-style-type: none;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-nav li {
-  height: 3.75rem;
-  margin-top: 0.625rem;
-}
-nav a {
-  height: 100%;
-  padding: 0 1.875rem;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  color: black;
-}
-.link:hover {
-  background-color: rgba(255, 255, 255, 0.314);
-  filter: blur(20%);
-  transition: all 0.5s ease-in;
-}
-nav a button {
-  color: #1b5e20;
-  background-color: #ffeb3b;
-  border: none;
-  padding: 0.3125rem 1.25rem;
-  margin-top: 0.625rem;
-  border-radius: 0.3125rem;
-  font-weight: bold;
-  cursor: pointer;
-  font-size: 1rem;
-}
-.nav-button:hover {
-  background-color: #f9c23c;
-  transform: scale(1.1);
-  transition: all 0.5s ease-in;
-}
-
-.hamburger {
-  display: none;
-  cursor: pointer;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 2rem;
-  height: 2rem;
-  margin-right: 1.875rem;
-}
-
-.hamburger .bar {
-  width: 100%;
-  height: 0.25rem;
-  background-color: #1b5e20;
-  border-radius: 0.125rem;
+  font-family: "Inter", sans-serif;
 }
 
 /* HERO-CONTENT*/
@@ -110,7 +20,7 @@ nav a button {
   width: 100vw;
   height: 130vh;
   background-image: linear-gradient(to right, #1b5e20, rgba(0, 255, 0, 0) 20%),
-    url(./IMAGES/Hero\ Section.png);
+    url(/IMAGES/Hero\ Section.png);
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
@@ -742,6 +652,9 @@ span {
   padding: 3.125rem;
   text-align: center;
   margin-top: 10.5rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .section6 h2 {
@@ -770,17 +683,19 @@ span {
 }
 .questionbox-cont {
   display: flex;
-  height: 18.75rem;
+  height: 15.75rem;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
   margin-top: 3.125rem;
 }
 
 .question-box {
   margin: 0 auto;
-  padding: 2em;
+  padding: 2rem;
   width: 24rem;
-  height: 12.75rem;
+  height: 14.75rem;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -858,12 +773,14 @@ span {
   margin-top: 1.25rem;
   margin-right: 2.5rem;
   max-width: 31.25rem;
-  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.2);
   display: flex;
+  align-items: center;
+  height: 4.375rem;
 }
 
 .newsletter input[type="email"] {
   padding: 1.25rem;
+  height: 100%;
   border-radius: 0.3125rem;
   border: none;
   width: 18.75rem;
@@ -872,6 +789,8 @@ span {
 
 .newsletter button[type="submit"] {
   background-color: #1b5e20;
+  width: 10rem;
+  height: 100%;
   color: #ffffff;
   padding: 1.25rem 1.25rem;
   border-radius: 0.3125rem;
@@ -886,153 +805,4 @@ span {
 
 .newsletter button[type="submit"]:hover {
   background-color: #003300;
-}
-
-/*FOOTER*/
-.footer {
-  background-color: #ffee54;
-  padding: 0.625rem 1.25rem;
-  position: relative;
-  bottom: 0;
-  /* width: auto; */
-}
-
-.footer .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  text-align: left;
-  height: 12.5rem;
-  /* padding: auto; */
-  margin-bottom: 3.125rem;
-}
-
-.footer .section {
-  font-weight: bold;
-  width: 20%;
-  min-width: 11.25rem;
-}
-footer .section:last-of-type {
-  text-align: right;
-}
-.footer .section img {
-  width: 1.25rem;
-}
-.footer h3 {
-  font-size: 1.875rem;
-  /* padding-right: 6.25rem; */
-  font-family: "Mochiy Pop One", "sans-serif";
-}
-
-.section h4 {
-  font-size: 1.25rem;
-}
-.wasteflip-info {
-  padding: 0.625rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: left;
-}
-
-.more-inf {
-  margin-bottom: 2rem;
-  padding-left: 1rem;
-}
-.more-inf h5 {
-  font-size: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-.mail {
-  display: flex;
-  gap: 0.625rem;
-  align-items: center;
-  margin-bottom: 0.625rem;
-}
-.hr {
-  border: 0.05rem solid #111111;
-  margin-bottom: 2rem;
-  width: 85%;
-}
-
-.footer p,
-.footer a {
-  color: black;
-  text-decoration: none;
-  font-size: 1rem;
-}
-.section a {
-  line-height: 1.875rem;
-  transition: color 0.3s ease;
-}
-
-.section a:hover {
-  color: #1b5e20;
-}
-.footer .social-icons a {
-  margin-right: 0.625rem;
-}
-
-.footer .social-icons img {
-  margin-top: 1.25rem;
-  width: 1.25rem;
-}
-.footer-bottom {
-  display: flex;
-  justify-content: space-between;
-}
-.bottom-left,
-.copyright {
-  display: flex;
-  gap: 1.5rem;
-  font-weight: 500;
-}
-.image-container {
-  position: relative;
-  bottom: 4.5rem;
-  margin-bottom: -4rem;
-}
-@media (max-width: 768px) {
-  #nav-links {
-    position: absolute;
-    top: 5rem;
-    right: 0;
-    width: 100%;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: white;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in-out;
-  }
-
-  #nav-links.active {
-    transform: translateX(0);
-  }
-
-  nav ul {
-    display: none;
-  }
-
-  nav ul.active {
-    display: flex;
-    height: 10rem;
-  }
-
-  nav li {
-    margin-top: 1rem;
-  }
-
-  .nav-button {
-    margin-top: 2rem;
-  }
-
-  .hamburger {
-    display: flex;
-    position: absolute;
-    top: 1.5rem;
-    right: 1.875rem;
-    z-index: 2;
-  }
 }
