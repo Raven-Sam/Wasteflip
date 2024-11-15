@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WasteFlip Dashboard Analytics</title>
+    <link rel="stylesheet" href="/wasteflip/CSS/dasbord styles/Dashboard-analytics.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard-analytics">
+        <aside class="sidebar">
+            <div class="logo">WasteFlip</div>
+            <nav>
+                <a href="/wasteflip/PAGES/dasboards/Dasboardhome.html" class="nav-item">
+                    <img src="/wasteflip/IMAGES/Dashboard-icon.svg" alt="Dashboard icon">
+                    Dashboard
+                </a>
+                
+                <a href="/wasteflip/PAGES/dasboards/Paymentpage.html" class="nav-item">
+                    <img src="/wasteflip/IMAGES/Payment-icon.svg" alt="Payment icon">
+                    Payment
+                </a>
+                <a href="/PAGES/dasboards/Analyticspage.html" class="nav-item active">
+                    <img src="/wasteflip/IMAGES/Analytics-icon.svg" alt="Analytics icon">
+                    Analytics
+                </a>
+            </nav>
+            <div class="admin-profile">
+                <img src="/wasteflip/IMAGES/jane-profile.png" alt="Admin avatar">
+                <span>Jane</span>
+            </div>
+        </aside>
+        <main class="main-content">
+            <header class="header">
+                <div class="breadcrumb">
+                    <button aria-label="Go back">
+                        <img src="/wasteflip/IMAGES/backbotton-icon.svg" alt="Back arrow">
+                    </button>
+                    <span>Dashboards</span>
+                </div>
+                <div class="search-bar">
+                    <img src="/wasteflip/IMAGES/search-icon.svg" alt="Search icon">
+                    <input type="text" placeholder="Search" aria-label="Search">
+                    <span>⌘/</span>
+                </div>
+                <button class="notification-btn" aria-label="Notifications">
+                    <img src="/wasteflip/IMAGES/notification-icon.svg" alt="Notification icon">
+                    <span class="notification-badge">3</span>
+                </button>
+            </header>
+            <div class="stats-grid">
+                <div class="stat-card" style="background-color: var(--secondary-color);">
+                    <h3>Views</h3>
+                    <div class="stat-info">
+                        <div class="stat-value" id="viewsValue">0</div>
+                        <div class="stat-change">
+                            <img src="/wasteflip/IMAGES/rate-up-icon.svg" alt="Increase icon">
+                            <span>+11.01%</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="stat-card" style="background-color: var(--tertiary-color);">
+                    <h3>Visits</h3>
+                    <div class="stat-info">
+                        <div class="stat-value" id="visitsValue">0</div>
+                        <div class="stat-change">
+                            <img src="/wasteflip/IMAGES/rate-down-icon.svg" alt="Decrease icon">
+                            <span>-0.03%</span>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="stat-card" style="background-color: var(--quaternary-color);">
+                    <h3>New Users</h3>
+                    <div class="stat-info">
+                    <div class="stat-value" id="newUsersValue">0</div>
+                    <div class="stat-change">
+                        <img src="/wasteflip/IMAGES/rate-up-icon.svg" alt="Increase icon">
+                        <span>+15.03%</span>
+                    </div>
+                    
+                    </div>
+                </div>
+                <div class="stat-card" style="background-color: var(--black);">
+                    <h3  style="color: var(--white);">Active Users </h3>
+                   <div class="stat-info">
+                    <div class="stat-value" id="activeUsersValue" style="color: var(--white);">0</div>
+                    <div class="stat-change" style="color: var(--white);">
+                        <img src="/wasteflip/IMAGES/ArrowRise.svg" alt="Increase icon" >
+                        <span>+6.08%</span>
+                   </div> 
+                    </div>
+                </div>
+            </div>
+            <section class="chart-section">
+                <div class="chart-header">
+                    <div class="chart-tabs">
+                        <div class="chart-tab active">Total Users</div>
+                        <div class="chart-tab">Total Pickups</div>
+                        <div class="chart-tab">Usage Trends</div>
+                    </div>
+                    <div class="chart-legend">
+                        <div class="legend-item">
+                            <div class="legend-color" style="background-color: #144816;"></div>
+                            <span>This year</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color" style="background-color: #eec22c;"></div>
+                            <span>Last year</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <canvas id="usersChart"></canvas>
+                </div>
+            </section>
+            <section class="notifications-section">
+                <div class="section-header">
+                    <h2 class="section-title">Notifications</h2>
+                </div>
+                <div class="notification-item">
+                    <div class="notification-icon" style="background-color: #e3f5ff;">
+                        <img src="/wasteflip/IMAGES/bug-icon.svg" alt="Bug fix icon">
+                    </div>
+                    <div class="notification-content">
+                        <div class="notification-title">You fixed a bug</div>
+                        <div class="notification-time">Just now</div>
+                    </div>
+                </div>
+                <FILE path="dashboard-analytics.html">
+                <div class="notification-item">
+                    <div class="notification-icon" style="background-color: #e9ecf6;">
+                        <img src="/wasteflip/IMAGES/profile.svg" alt="New user icon">
+                    </div>
+                    <div class="notification-content">
+                        <div class="notification-title">New user registered</div>
+                        <div class="notification-time">59 minutes ago</div>
+                    </div>
+                </div>
+                <div class="notification-item">
+                    <div class="notification-icon" style="background-color: #e3f5ff;">
+                        <img src="/wasteflip/IMAGES/New-schedule.svg" alt="Schedule icon">
+                    </div>
+                    <div class="notification-content">
+                        <div class="notification-title">New Schedule</div>
+                        <div class="notification-time">12 hours ago</div>
+                    </div>
+                </div>
+                <div class="notification-item">
+                    <div class="notification-icon" style="background-color: #e9ecf6;">
+                        <img src="/IMAGES/Changes.svg" alt="User account icon">
+                    </div>
+                    <div class="notification-content">
+                        <div class="notification-title">Micheal made changes to a user account</div>
+                        <div class="notification-time">Today, 11:59 AM</div>
+                    </div>
+                </div>
+                <div class="notification-item">
+                    <div class="notification-icon" style="background-color: rgba(0, 0, 0, 0.03);">
+                        <img src="/wasteflip/IMAGES/Feedback.svg" alt="Feedback icon">
+                    </div>
+                    <div class="notification-content">
+                        <div class="notification-title">Feedback & Reviews</div>
+                        <div class="notification-time">12 hours ago</div>
+                    </div>
+                </div>
+            </section>
+            <section class="upcoming-pickups">
+                <div class="section-header">
+                    <h2 class="section-title">Upcoming Pickups</h2>
+                    <button aria-label="Add new pickup">
+                        <img src="/wasteflip/IMAGES/more-option.svg" alt="Add icon">
+                    </button>
+                </div>
+                <table class="pickup-table">
+                    <thead>
+                        <tr>
+                            <th>Customer</th>
+                            <th>Address</th>
+                            <th>Date</th>
+                            <th>Waste Type</th>
+                            <th>Payment Method</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="customer-info">
+                                    <img src="/wasteflip/IMAGES/profile-photo3.png" alt="Seun Omotusi">
+                                    <span>Seun Omotusi</span>
+                                </div>
+                            </td>
+                            <td>302 Sander street, sale city</td>
+                            <td>Jun 24, 2024</td>
+                            <td>Residential Services</td>
+                            <td>Credit Card</td>
+                            <td>N2000.00</td>
+                            <td><span class="status-badge status-in-progress">In Progress</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="customer-info">
+                                    <img src="/wasteflip/IMAGES/profile-photo4.png" alt="Ore Grace">
+                                    <span>Ore Grace</span>
+                                </div>
+                            </td>
+                            <td>302 Sander street, sale city</td>
+                            <td>Jun 24, 2024</td>
+                            <td>Commercial Services</td>
+                            <td>Credit Card</td>
+                            <td>N2000.00</td>
+                            <td><span class="status-badge status-complete">Complete</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="customer-info">
+                                    <img src="/wasteflip/IMAGES/profile-photo5.png" alt="Brian Babaoye">
+                                    <span>Brian Babaoye</span>
+                                </div>
+                            </td>
+                            <td>302 Sander street, sale city</td>
+                            <td>Jun 24, 2024</td>
+                            <td>Institutional services</td>
+                            <td>Credit card</td>
+                            <td>N2000.00</td>
+                            <td><span class="status-badge status-pending">Pending</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <div class="dashboard-bottom">
+                <section class="user-retention">
+                    <h2 class="section-title">User Retention & Churn</h2>
+                    <div class="retention-chart">
+                        <canvas id="retentionChart"></canvas>
+                    </div>
+                    <div class="chart-legend">
+                        <div class="legend-item">
+                            <div class="legend-color" style="background-color: #144816;"></div>
+                            <span>User Retention</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color" style="background-color: #eec22c;"></div>
+                            <span>User Churn</span>
+                        </div>
+                    </div>
+                </section>
+                <section class="user-engagement">
+                    <h2 class="section-title">User Engagement</h2>
+                    <div class="engagement-chart">
+                        <canvas id="engagementChart"></canvas>
+                    </div>
+                    <div class="engagement-legend">
+                        <div class="legend-item">
+                            <div class="legend-color" style="background-color: #144816;"></div>
+                            <span>Scheduling Pickup</span>
+                            <span class="percentage">52.1%</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color" style="background-color: #eec22c;"></div>
+                            <span>Recycling Centers</span>
+                            <span class="percentage">22.8%</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color" style="background-color: #a5dc69;"></div>
+                            <span>Waste drop-offs</span>
+                            <span class="percentage">13.9%</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color" style="background-color: #7b91b0;"></div>
+                            <span>Other</span>
+                            <span class="percentage">11.2%</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const viewsValue = document.getElementById('viewsValue');
+            const visitsValue = document.getElementById('visitsValue');
+            const newUsersValue = document.getElementById('newUsersValue');
+            const activeUsersValue = document.getElementById('activeUsersValue');
+
+            function animateValue(element, start, end, duration) {
+                let startTimestamp = null;
+                const step = (timestamp) => {
+                    if (!startTimestamp) startTimestamp = timestamp;
+                    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                    element.innerHTML = Math.floor(progress * (end - start) + start).toLocaleString();
+                    if (progress < 1) {
+                        window.requestAnimationFrame(step);
+                    }
+                };
+                window.requestAnimationFrame(step);
+            }
+
+            animateValue(viewsValue, 0, 1234, 2000);
+            animateValue(visitsValue, 0, 5678, 2000);
+            animateValue(newUsersValue, 0, 912, 2000);
+            animateValue(activeUsersValue, 0, 2345, 2000);
+
+            const usersChartCtx = document.getElementById('usersChart').getContext('2d');
+            new Chart(usersChartCtx, {
+                type: 'line',
+                data: {
+                    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+                    datasets: [{
+                        label: 'This year',
+                        data: [12000, 19000, 15000, 25000, 22000, 30000, 28000],
+                        borderColor: '#144816',
+                        tension: 0.4,
+                        fill: false
+                    }, {
+                        label: 'Last year',
+                        data: [10000, 15000, 13000, 20000, 18000, 25000, 22000],
+                        borderColor: '#eec22c',
+                        tension: 0.4,
+                        fill: false
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: 30000,
+                            ticks: {
+                                stepSize: 10000
+                            }
+                        }
+                    }
+                }
+            });
+
+            const retentionChartCtx = document.getElementById('retentionChart').getContext('2d');
+            new Chart(retentionChartCtx, {
+                type: 'bar',
+                data: {
+                    labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+                    datasets: [{
+                        label: 'User Retention',
+                        data: [20000, 18000, 22000, 19000, 23000, 21000, 24000],
+                        backgroundColor: '#144816'
+                    }, {
+                        label: 'User Churn',
+                        data: [5000, 4000, 6000, 3000, 5000, 4000, 7000],
+                        backgroundColor: '#eec22c'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        x: {
+                            stacked: true,
+                        },
+                        y: {
+                            stacked: true,
+                            beginAtZero: true,
+                            max: 30000,
+                            ticks: {
+                                stepSize: 10000
+                            }
+                        }
+                    }
+                }
+            });
+
+            const engagementChartCtx = document.getElementById('engagementChart').getContext('2d');
+            new Chart(engagementChartCtx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Scheduling Pickup', 'Recycling Centers', 'Waste drop-offs', 'Other'],
+                    datasets: [{
+                        data: [52.1, 22.8, 13.9, 11.2],
+                        backgroundColor: ['#144816', '#eec22c', '#a5dc69', '#7b91b0']
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
