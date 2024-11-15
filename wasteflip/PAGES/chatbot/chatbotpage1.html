@@ -9,44 +9,60 @@
     <title>Chat with Flip</title>
 </head>
 <body>
-    <section class="chat-container">
-        <header class="header-wrapper">
-            <div class="flip-ai-wrapper">
-                <img src="/IMAGES/FlipAi.svg" alt="Flip AI Avatar" class="flip-ai-avatar" />
-                <div class="flip-ai-text">
-                    <span class="chat-with-text">Chat with</span>
-                    <span class="flip-text">Flip</span>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../CSS/chatbot.css/chatbotpage1.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+        <title>Chat with Flip</title>
+    </head>
+    <body>
+        <section class="chat-container">
+            <header class="header-wrapper">
+                <div class="flip-ai-wrapper">
+                    <img src="../../IMAGES/FlipAi.svg" alt="Flip AI Avatar" class="flip-ai-avatar" />
+                    <div class="flip-ai-text">
+                        <span class="chat-with-text">Chat with</span>
+                        <span class="flip-text">Flip</span>
+                    </div>
                 </div>
+                <button class="menu-button" aria-label="Menu">
+                    <img src="../../IMAGES/cancel-button.svg" alt="" class="menu-icon" />
+                </button>
+            </header>
+
+            <div class="chat-messages" id="chatMessages">
+                <div class="message ai">It looks like you have plastic items. Would you like to:</div>
             </div>
-            <button class="menu-button" aria-label="Menu">
-                <img src="/IMAGES/cancel-button.svg" alt="" class="menu-icon" />
-            </button>
-        </header>
 
-        <div class="chat-messages" id="chatMessages">
-            <div class="message ai">It looks like you have plastic items. Would you like to:</div>
-        </div>
+            <div class="action-buttons">
+                <button class="action-button schedule-pickup-button">Schedule a Pickup</button>
+                <button class="action-button find-dropoff-button">Find a Nearby Drop-off</button>
+            </div>
 
-        <div class="action-buttons">
-            <button class="action-button schedule-pickup-button">Schedule a Pickup</button>
-            <button class="action-button find-dropoff-button">Find a Nearby Drop-off</button>
-        </div>
-
-        <form class="message-input-wrapper" id="messageForm">
-            <div class="message-input-content">
-                <label for="messageInput" class="visually-hidden">Message Flip</label>
-                <input type="text" id="messageInput" placeholder="Message Flip" aria-label="Message Flip" />
-                <div class="input-actions">
-                    <button type="button" class="input-action-button" aria-label="Voice input">
-                        <img src="/IMAGES/subway_pin.svg" alt="" class="microphone-icon" />
-                    </button>
-                    <button type="submit" class="input-action-button send-button" aria-label="Send message">
-                        <img src="/IMAGES/send-arrow.svg" alt="" class="send-icon" />
-                    </button>
+            <form class="message-input-wrapper" id="messageForm">
+                <div class="message-input-content">
+                    <label for="messageInput" class="visually-hidden">Message Flip</label>
+                    <input type="text" id="messageInput" placeholder="Message Flip" aria-label="Message Flip" />
+                    <div class="input-actions">
+                        <button type="button" class="input-action-button" aria-label="Voice input">
+                            <img src="../../IMAGES/subway_pin.svg" alt="" class="microphone-icon" />
+                        </button>
+                        <button type="submit" class="input-action-button send-button" aria-label="Send message">
+                            <img src="../../IMAGES/send-arrow.svg" alt="" class="send-icon" />
+                        </button>
+                    </div>
                 </div>
-            </div>
-        </form>
-    </section>
+            </form>
+        </section>
+
+        <script>
+            // JavaScript code remains unchanged
+        </script>
+    </body>
+    </html>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {

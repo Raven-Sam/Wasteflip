@@ -8,32 +8,47 @@
 
 </head>
 <body>
-    <section class="modal" aria-labelledby="modalTitle">
-        <header class="header-container">
-            <img src="/IMAGES/Upload a photo.svg" alt="Waste Management Logo" class="logo" />
-            <div class="icon-wrapper">
-                <img src="/IMAGES/cancel-button.svg" alt="Recycling Icon" class="icon" />
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../CSS/chatbot.css/chatbotpage2.css">
+        <title>Waste Management Modal</title>
+    </head>
+    <body>
+    
+        <section class="modal" aria-labelledby="modalTitle">
+            <header class="header-container">
+                <img src="../../IMAGES/Upload a photo.svg" alt="Waste Management Logo" class="logo" />
+                <div class="icon-wrapper">
+                    <img src="../../IMAGES/cancel-button.svg" alt="Recycling Icon" class="icon" />
+                </div>
+            </header>
+            <h1 id="modalTitle" class="visually-hidden">Waste Management Information</h1>
+            <label for="imageUpload" class="upload-btn">Upload Waste Image</label>
+            <input type="file" id="imageUpload" accept="image/*">
+            <img id="preview" src="" alt="Uploaded waste image preview" style="display: none;">
+            <main class="waste-table">
+                <div class="table-header">
+                    <div class="header-cell">Waste Type</div>
+                    <div class="header-cell">Recyclable</div>
+                    <div class="header-cell">Nearby Recycling Center</div>
+                    <div class="header-cell">Nearby Waste Dropoff</div>
+                    <div class="header-cell">Comment</div>
+                </div>
+                <div id="wasteTableBody"></div>
+            </main>
+            <div class="action-buttons">
+                <button class="btn btn-primary" id="schedulePickup">Schedule a Pickup</button>
+                <button class="btn btn-secondary" id="findDropoff">Find a Nearby Drop-off</button>
             </div>
-        </header>
-        <h1 id="modalTitle" class="visually-hidden">Waste Management Information</h1>
-        <label for="imageUpload" class="upload-btn">Upload Waste Image</label>
-        <input type="file" id="imageUpload" accept="image/*">
-        <img id="preview" src="" alt="Uploaded waste image preview" style="display: none;">
-        <main class="waste-table">
-            <div class="table-header">
-                <div class="header-cell">Waste Type</div>
-                <div class="header-cell">Recyclable</div>
-                <div class="header-cell">Nearby Recycling Center</div>
-                <div class="header-cell">Nearby Waste Dropoff</div>
-                <div class="header-cell">Comment</div>
-            </div>
-            <div id="wasteTableBody"></div>
-        </main>
-        <div class="action-buttons">
-            <button class="btn btn-primary" id="schedulePickup">Schedule a Pickup</button>
-            <button class="btn btn-secondary" id="findDropoff">Find a Nearby Drop-off</button>
-        </div>
-    </section>
+        </section>
+        <script>
+            // JavaScript code remains unchanged
+        </script>
+    </body>
+    </html>
     <script>
         const wasteData = [
             {
