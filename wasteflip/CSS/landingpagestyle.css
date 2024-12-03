@@ -204,17 +204,16 @@ nav a button {
 }
 
 /* SECTION 2 */
-
 .audience {
   max-width: 100%;
   background-color: white;
   padding: 3.125rem 0;
-  height: 120vh;
+  min-height: 100vh;
+  height: auto;
 }
 
 .container {
   max-width: 100%;
-  max-height: 100vh;
   margin: 0 auto;
   margin-top: 6.25rem;
   padding: 0 1.25rem;
@@ -224,42 +223,43 @@ nav a button {
   color: #1b5e20;
   font-size: 2.5rem;
   text-align: center;
-  text-align: center;
   margin-bottom: 3.125rem;
 }
+
 .audience-cards {
   display: flex;
-  justify-content: space-evenly;
   flex-wrap: wrap;
-  margin: 0 -0.625rem;
+  gap: 1.5rem;
+  justify-content: center;
+  margin: 0;
 }
 
 .card {
   border-radius: 0.3125rem;
   background-color: transparent;
-  width: 28.125rem;
-  height: 28.75rem;
-  margin: 0 0.625rem;
-  margin-bottom: 1.25rem;
-  transition: transform 0.3s ease;
+  width: 90%;
+  max-width: 28rem;
+  height: auto;
+  margin: 0 auto;
   transform: scale(1);
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0 cover 40%;
-}
-@keyframes appear {
-  from {
-    opacity: 0;
-    scale: 0.5;
-  }
-  to {
-    opacity: 1;
-    scale: 1;
-  }
+  animation: appear 0.5s ease-in-out both;
+  transition: transform 0.3s ease-in-out;
 }
 
 .card:hover {
   transform: scale(1.05);
+}
+
+/* Entry Animation */
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .card img {
@@ -268,26 +268,36 @@ nav a button {
   margin-bottom: 1.25rem;
   border-radius: 0.625rem;
 }
+
 .card-content {
   background-color: white;
   text-align: center;
-  align-self: center;
   position: relative;
-  bottom: 9.375rem;
-  height: 18.75rem;
-  margin-left: 0.625rem;
+  height: auto;
+  padding: 1rem;
   border-radius: 1.25rem;
-  width: 26.875rem;
+  animation: fade-in 0.5s ease-in-out both;
 }
 
-/*CARD ANIMATION*/
+/* Content Animation */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Background Spin Animation */
 @property --angle {
   syntax: "<angle>";
   initial-value: 0deg;
   inherits: false;
 }
 
-.card-content ::after,
 .card-content::after {
   content: "";
   position: absolute;
@@ -301,14 +311,11 @@ nav a button {
   left: 0;
   width: 100%;
   height: 100%;
-  padding-bottom: 0.9375rem;
   border-radius: 1.25rem;
   z-index: -1;
-  animation: 3s spin linear infinite;
+  animation: spin 3s linear infinite;
 }
-.card-content::before {
-  filter: blur(1.5rem);
-}
+
 @keyframes spin {
   from {
     --angle: 0deg;
@@ -320,12 +327,8 @@ nav a button {
 
 .card h3 {
   color: #1b5e20;
-  font-size: 1.25rem;
-  margin-bottom: 0.625rem;
-  margin-top: 0.625rem;
-  padding-top: 5rem;
   font-size: 1.375rem;
-  margin-bottom: 1.25rem;
+  margin: 1rem 0;
 }
 
 .card p {
@@ -333,21 +336,29 @@ nav a button {
   line-height: 1.5;
   text-align: center;
   max-width: 21.875rem;
-  margin-left: 1.875rem;
+  margin: 0 auto;
 }
 
-/* MEdia querry
-@media (max-width: 48rem) {
-  .audience-cards {
-    flex-direction: column;
-  }
-
+@media (max-width: 768px) {
   .card {
     width: 100%;
-    margin: 0;
-    margin-bottom: 1.25rem;
+    max-width: none;
   }
-}  */
+  .card-content {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .audience h2 {
+    font-size: 1.8rem;
+  }
+  .card p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+}
+
 
 /*SECTION 3*/
 
