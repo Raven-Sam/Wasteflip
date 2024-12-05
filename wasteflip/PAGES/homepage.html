@@ -45,7 +45,7 @@
             <p>We prioritize sustainabilty and convenience.Discover how easy it is to schedule and find recycling services near you.</p>
             </div>
             <div class="content-bt">
-                <a href=""><button class="pickup-bt">Schedule a Pickup</button></a>
+                <a href="/wasteflip/PAGES/schedule.html"><button class="pickup-bt">Schedule a Pickup</button></a>
             <a href="#learn-more"><button class="learn-bt">Learn More</button></a>
             </div>
         </div>
@@ -86,6 +86,7 @@
   </section>
 
 
+
   <section class="section3">
     <div>
       <h2> OUR SERVICES</h2>
@@ -97,24 +98,28 @@
           <p> We provide efficent waste management solution tailored to your needs. From residential pickups to
             commerical services, we ensure a cleaner, greener community</p>
         </div>
-        <div class="section3-text2">
-          <div class="text2">
-            <h3> Recycling</h3>
-            <p> Conveinent recyling options near you.</p>
-          </div>
-          <div class="text3">
-            <h3>Pickups</h3>
-            <p> Schedule your waste pickup easily.</p>
-          </div>
-        </div>
         <div class=" section3-butons">
-          <a href="../PAGES/dispose.html"><button class="pickup-bt">Dispose Now</button></a>
-          <a href="#learn-more"><button class="learn-bt">Learn More</button></a>
+          <a href="/wasteflip/PAGES/LOGIN.html"><button class="pickup-bt">Schedule a Pickup</button></a>
+          <a href="#learn-more"><button class="learn-bt">Select Location</button></a>
         </div>
       </div>
 
-      <div class="section3-img">
-        <img src="../IMAGES/image (1).png" alt="NO IMAGE">
+      <div class="section3-img-ct">
+        <div class="section3-img">
+          <img src="/wasteflip/IMAGES/Date picker-cuate 1.svg"  alt="NO IMAGE" width="50px" height="200px">
+        <img src="/wasteflip/IMAGES/Compost cycle-cuate 1.svg" alt="NO IMAGE" width="50px" height="200px">
+        </div>
+
+        <div class="section3-text2">
+          <div class="text2">
+            <h3> Pickups</h3>
+            <p> Schedule your waste pickup easily.</p>
+          </div>
+          <div class="text3">
+            <h3>Recycling</h3>
+            <p>Convenient recycling option near you.</p>
+          </div>
+        </div>
 
       </div>
   </section>
@@ -293,8 +298,7 @@
                 stroke="#ffffff"
                 stroke-width="2"
                 stroke-linecap="round"
-                stroke-linejoin="round"
-              />
+                stroke-linejoin="round"              />
             </svg>
         </button>
       </form>
@@ -372,8 +376,66 @@
         </div>
       </div>
   </footer>
-    
+
+               
+<div class="chatbot-container" id="chatbotContainer">
+    <div class="chatbot-icon" id="chatbotIcon">
+        <img src="../IMAGES/FlipAi.svg" alt="Chat with Flip" />
+    </div>
+    <div class="chatbot-window" id="chatbotWindow">
+        <div class="chatbot-header">
+            <h3>Chat with Flip</h3>
+            <button id="closeChatbot">&times;</button>
+        </div>
+        <iframe id="chatbotFrame" src="chatbot/chatbot.html"></iframe>
+    </div>
+</div>
+                <script>
+                    const chatbotIcon = document.getElementById('chatbotIcon');
+                    const chatbotWindow = document.getElementById('chatbotWindow');
+                    const closeChatbot = document.getElementById('closeChatbot');
+                    const chatbotFrame = document.getElementById('chatbotFrame');
+                
+                    chatbotIcon.addEventListener('click', function() {
+                        chatbotWindow.style.display = 'block';
+                    });
+                
+                    closeChatbot.addEventListener('click', function() {
+                        chatbotWindow.style.display = 'none';
+                    });
+                
+                    window.addEventListener('message', function(event) {
+                        if (event.source === chatbotFrame.contentWindow) {
+                            handleChatbotMessage(event.data);
+                        }
+                    });
+                
+                    function handleChatbotMessage(message) {
+                        switch(message.action) {
+                            case 'navigate':
+                                navigateChatbot(message.page);
+                                break;
+                        }
+                    }
+                
+                    function navigateChatbot(page) {
+                        switch(page) {
+                            case 'home':
+                                chatbotFrame.src = 'chatbot/chatbot.html';
+                                break;
+                            case 'page1':
+                                chatbotFrame.src = 'chatbot/chatbotpage1.html';
+                                break;
+                            case 'page2':
+                                chatbotFrame.src = 'chatbot/chatbotpage2.html';
+                                break;
+                        }
+                    }
+                </script>
+            </body>
+    </body>
 </body>
+
 <script>
   const nav = document.querySelector('nav');
 
