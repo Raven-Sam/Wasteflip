@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/chatbot.css/chatbotpage1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+    <title>Chat with Flip</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../CSS/chatbot.css/chatbotpage1.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+        <title>Chat with Flip</title>
+    </head>
+    <body>
+        <section class="chat-container">
+            <header class="header-wrapper">
+                <div class="flip-ai-wrapper">
+                    <img src="../../IMAGES/FlipAi.svg" alt="Flip AI Avatar" class="flip-ai-avatar" />
+                    <div class="flip-ai-text">
+                        <span class="chat-with-text">Chat with</span>
+                        <span class="flip-text">Flip</span>
+                    </div>
+                </div>
+                <button class="menu-button" aria-label="Menu">
+                    <img src="../../IMAGES/cancel-button.svg" alt="" class="menu-icon" />
+                </button>
+            </header>
+
+            <div class="chat-messages" id="chatMessages">
+                <div class="message ai">It looks like you have plastic items. Would you like to:</div>
+            </div>
+
+            <div class="action-buttons">
+                <button class="action-button schedule-pickup-button">Schedule a Pickup</button>
+                <button class="action-button find-dropoff-button">Find a Nearby Drop-off</button>
+            </div>
+
+            <form class="message-input-wrapper" id="messageForm">
+                <div class="message-input-content">
+                    <label for="messageInput" class="visually-hidden">Message Flip</label>
+                    <input type="text" id="messageInput" placeholder="Message Flip" aria-label="Message Flip" />
+                    <div class="input-actions">
+                        <button type="button" class="input-action-button" aria-label="Voice input">
+                            <img src="../../IMAGES/subway_pin.svg" alt="" class="microphone-icon" />
+                        </button>
+                        <button type="submit" class="input-action-button send-button" aria-label="Send message">
+                            <img src="../../IMAGES/send-arrow.svg" alt="" class="send-icon" />
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <script>
+            // JavaScript code remains unchanged
+        </script>
+    </body>
+    </html>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const chatMessages = document.getElementById('chatMessages');
+            const messageForm = document.getElementById('messageForm');
+            const messageInput = document.getElementById('messageInput');
+            const schedulePickupButton = document.querySelector('.schedule-pickup-button');
+            const findDropoffButton = document.querySelector('.find-dropoff-button');
+
+            function addMessage(content, isUser = false) {
+                const messageElement = document.createElement('div');
+                messageElement.classList.add('message');
+                messageElement.classList.add(isUser ? 'user' : 'ai');
+                messageElement.textContent = content;
+                chatMessages.appendChild(messageElement);
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            }
+
+            messageForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const message = messageInput.value.trim();
+                if (message) {
+                    addMessage(message, true);
+                    messageInput.value = '';
+                    
+                    // Simulate AI response
+                    setTimeout(() => {
+                        addMessage("I'm processing your request. How else can I assist you?");
+                    }, 1000);
+                }
+            });
+
+            schedulePickupButton.addEventListener('click', function() {
+                addMessage("I'd like to schedule a pickup for my plastic items." ,"waste drop off", true);
+                setTimeout(() => {
+                    addMessage("Certainly! I can help you schedule a pickup for your plastic items. What date and time would be convenient for you?");
+                }, 1000);
+            });
+
+            findDropoffButton.addEventListener('click', function() {
+                addMessage("I want to find a nearby drop-off location.", true);
+                setTimeout(() => {
+                    addMessage("Of course! I can help you find the nearest drop-off location for your plastic items. Could you please provide your current location or zip code?");
+                }, 1000);
+            });
+        });
+    </script>
+</body>
+</html>
