@@ -3,75 +3,64 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
-    
 }
 
 body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #f4f4f4;
 }
 
 .container {
-    
     display: flex;
     width: 100%;
     max-width: 1200px;
-    background:rgba(0, 0, 0, 0.5)url(../IMAGES/recycle-waste-management.jpg);
+    background: rgba(0, 0, 0, 0.5) url(../IMAGES/recycle-waste-management.jpg);
     background-blend-mode: darken;
-    
-    background-size: 1000px 700px;
-    
-    
+    background-size: cover;
+    background-position: center;
 }
 
 .left {
     flex: 1;
     position: relative;
-    background-image: url('.jpg'); 
-    background-size: cover;
-    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
 }
 
 .logo {
-    font-family:"Mochiy Pop One", sans-serif;
-    position: absolute;
-    top: 300px;
-    left: 200px;
-    background-image:linear-gradient( to right, #00ff00,darkgreen, #ffff00, #0000ff);
+    font-family: "Mochiy Pop One", sans-serif;
+    background-image: linear-gradient(to right, #00ff00, darkgreen, #ffff00, #0000ff);
     animation: titleAnimation 6s infinite;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 36px;
+    font-size: 3rem;
     font-weight: bold;
+    text-align: center;
 }
+
 @keyframes titleAnimation {
-    0% {
-      transform: scale(1);
-      background-position: 0% 50%;
+    0%, 100% {
+        transform: scale(1);
+        background-position: 0% 50%;
     }
     50% {
-      transform: scale(1.1);
-      background-position: 100% 50%;
+        transform: scale(1.1);
+        background-position: 100% 50%;
     }
-    100% {
-      transform: scale(1);
-      background-position: 0% 50%;
-    }
-  }
-
-
+}
 
 .right {
     flex: 1;
-    padding: 60px;
+    padding: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: white;
-    background-size: 200px 100px;
 }
 
 .login-box {
@@ -80,8 +69,8 @@ body {
 }
 
 h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 form {
@@ -90,56 +79,54 @@ form {
 }
 
 label {
-    font-size: 14px;
-    margin-top: 10px;
+    font-size: 0.875rem;
+    margin-top: 0.625rem;
 }
 
 input {
     width: 100%;
-    padding: 10px;
-    margin-top: 5px;
+    padding: 0.625rem;
+    margin-top: 0.3125rem;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
 }
-
-
-
 
 .options {
     display: flex;
     justify-content: space-between;
-    margin: 10px 0;
+    margin: 0.625rem 0;
     align-items: center;
-
 }
 
-.checkbox{
+.checkbox {
     width: auto;
     height: auto;
 }
+
 .forgot-password {
-    margin-top:20px ;
+    margin-top: 1.25rem;
     color: #f05a24;
     text-decoration: none;
 }
 
 .login-btn {
     background-color: #28a745;
-    padding: 10px;
+    padding: 0.625rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
     cursor: pointer;
-    margin-top: 20px;
-    font-size: 16px;
+    margin-top: 1.25rem;
+    font-size: 1rem;
 }
-.login-btn a{
+
+.login-btn a {
     color: white;
     text-decoration: none;
 }
 
 .signup {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 
 .signup a {
@@ -149,27 +136,125 @@ input {
 
 .login-alt {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 
 .social-login {
-    margin-top: 10px;
+    margin-top: 0.625rem;
     width: 100%;
-    padding: 10px;
+    padding: 0.625rem;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
     background-color: white;
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.social-login a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.social-login::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255, 255, 255, 0.4),
+        transparent
+    );
+    transition: all 0.5s;
+}
+
+.social-login:hover::before {
+    left: 100%;
 }
 
 .social-login.facebook {
-    color: #3b5998;
+    color: white;
+    background: linear-gradient(45deg, #3b5998, #8b9dc3);
+    background-size: 200% 200%;
 }
 
 .social-login.google {
-    color: #db4437;
+    color: white;
+    background: linear-gradient(45deg, #4285F4, #DB4437, #F4B400, #0F9D58);
+    background-size: 400% 400%;
 }
 
 .social-login.apple {
-    color: black;
+    color: white;
+    background: linear-gradient(45deg, #000000, #888888);
+    background-size: 200% 200%;
 }
+
+.social-login:hover {
+    background-position: right center;
+    color: #ffffff;
+    animation: gradientShift 3s ease infinite;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left, .right {
+        flex: none;
+        width: 100%;
+    }
+
+    .left {
+        min-height: 200px;
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+
+    .right {
+        padding: 1rem;
+    }
+
+    .login-box {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    .login-btn, .social-login {
+        font-size: 0.875rem;
+    }
+}
+
