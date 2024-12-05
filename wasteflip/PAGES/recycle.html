@@ -13,11 +13,16 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+/>
     <link rel="stylesheet" href="../CSS/recycle.css" />
     <script
       src="https://kit.fontawesome.com/3851908a3e.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <title>WasteFlip-Recycle Center</title>
   </head>
   <body>
@@ -77,8 +82,8 @@
           </select>
         </div>
         <div class="type location">
-          <h4>Your Location</h4>
-          <p>Map area</p>
+
+          <div id="map"></div>
         </div>
       </div>
       <div>
@@ -97,7 +102,7 @@
         </div>
         <div class="waste-category">
           <div class="waste-type">
-           <a href="./dispose.html"><img src="../IMAGES/plastic.png" alt="plastic" srcset="" /></a>
+           <a href="/wasteflip/PAGES/dispose.html"><img src="../IMAGES/plastic.png" alt="plastic" srcset="" /></a>
             <div class="green-bar">Plastic</div>
           </div>
           <div class="waste-type">
@@ -134,6 +139,7 @@
           <div></div>
         </div>
       </div>
+    
       <div class="drop">
         <h3>Nearby Waste drop-Offs</h3>
         <div class="drop-Offs">
@@ -282,37 +288,42 @@
       </div>
 
       <!-- Newsletter -->
-      <div class="newsletter">
-        <div class="newsletter-text-ct">
-          <h2>Newsletter</h2>
-          <p>
-            Sign up for Industry alert, deals, news and <br />
-            insights from WasteFlip Company.
-          </p>
+      <div class="news-cont">
+        <div class="newsletter">
+          <div class="newsletter-text-ct">
+            <h2>Ready to supercharge your enviroment?</h2>
+            <p class="news-desc">
+              Ask about wasteflip services, pricing, implementation, or anything
+              else. Our highly trained reps are standing by, ready to help.
+            </p>
+          </div>
+          <form>
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              required
+            />
+            <button type="submit" class="submit">
+              Subscribe
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13 9L16 12M16 12L13 15M16 12L8 12M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                  stroke="#ffffff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </form>
         </div>
-        <form>
-          <input type="email" placeholder="Enter your email address" required />
-          <button type="submit" class="submit">
-            Subscribe
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M13 9L16 12M16 12L13 15M16 12L8 12M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
-                stroke="#ffffff"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </button>
-        </form>
       </div>
-
       <!-- footer section -->
       <footer class="footer">
         <div class="container">
@@ -391,7 +402,43 @@
         </div>
       </footer>
     </div>
+    <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha384-2HVRjhFsi6TX/2+lYTVeeLx57ZTn3/jYx9+52wr/UuspgKH1Lpp5z5nRLSF2htTl"
+    crossorigin=""
+  ></script>
+  <script>
+    // Initialize the map
+    const map = L.map('map').setView([51.505, -0.09], 13); 
+
+    // Add a tile layer (OpenStreetMap)
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution:
+        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    }).addTo(map);
+
+  
+    const marker = L.marker([51.505, -0.09]).addTo(map);
+    marker.bindPopup('<b>Default Location</b><br>London').openPopup();
+
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          const { latitude, longitude } = position.coords;
+          map.setView([latitude, longitude], 13);
+          marker.setLatLng([latitude, longitude]);
+          marker.bindPopup('<b>Your Location</b>').openPopup();
+        },
+        (error) => {
+          console.error('Geolocation failed:', error.message);
+        }
+      );
+    } else {
+      console.error('Geolocation is not supported by this browser.');
+    }
+  </script>
   </body>
+  
   <script>
     const nav = document.querySelector("nav");
 
