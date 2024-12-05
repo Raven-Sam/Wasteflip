@@ -922,21 +922,25 @@ animation: fadeIn 0.6s ease forwards;
   align-items: center;
 }
 .newsletter-ct {
-  background-color: #ebebeb;
+  background-image: url(/wasteflip/IMAGES/newletter-img.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   display: flex;
+  flex-direction: column;
   width: 80%;
   height: 18.75rem;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   text-align: left;
 }
 .newsletter h2 {
-  color: #1b5e20;
-  font-size: 3.125rem;
+  color: white;
+  font-size: 2.125rem;
   margin-bottom: 0.45rem;
 }
 .newsletter p {
-  color: black;
+  color:white;
   font-size: 1rem;
   line-height: 1.5;
   width: 18.75rem;
