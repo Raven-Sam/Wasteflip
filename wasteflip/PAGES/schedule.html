@@ -36,143 +36,180 @@
       <ul id="nav-links">
         <li class="link"><a href="../PAGES/homepage.html">Home</a></li>
         <li class="link"><a href="../PAGES/recycle.html">Recycle Center</a></li>
-        <li class="link"><a href="../PAGES/schedule.html">Pickup Schedule</a></li>
+        <li class="link">
+          <a href="../PAGES/schedule.html">Pickup Schedule</a>
+        </li>
         <li class="link"><a href="#contact-us">Contact Us</a></li>
         <a href="../PAGES/SIGNUP-PAGE.HTML"
           ><button class="nav-button">Sign Up</button></a
         >
       </ul>
     </nav>
-      <div class="selection">
-        <div class="type">
-          <h4>Waste Type</h4>
-          <select name="waste-type" id="waste-type">
-            <option value="default">Choose an item</option>
-            <option value="plastic">Plastic</option>
-            <option value="paper">Paper</option>
-            <option value="metal">Metal</option>
-            <option value="bottle">Bottle</option>
-            <option value="can">Can</option>
-          </select>
-        </div>
-        <div class="type location">
-          <h4>Your Location</h4>
-          <p>Map area</p>
-        </div>
-      </div>
-      
-      <div class="Schedule-cont">
-        
-        <h5 class="Schedule">Schedule Pickup</h5>
-          <p class="instruction">Please complete the form below, to request a quote, and we’ll be in touch. 
-            Or you can call us and our specialists will provide help!
-          </p>
-        <form class="Schedule-form">
-          
-          <div class="form-wrap">
-            <div>
-              <label for="enquiry">Enquiry Type</label>
-              <select name="Enquiry" class="form-input">
-                <option value="0">Residential services</option>
-                <option value="1">Business services</option>
-              </select>
-            </div>
-            <div>
-              <label for="date">Date</label>
-              <input type="date" class="form-input">
-            </div>
-          
-          
-            <div>
-              <label for="size">Container size</label>
-              <select name="Size" class="form-input">
-                <option value="0">32 Gallon container</option>
-                <option value="1">40 Gallon container</option>
-                <option value="2">44 Gallon container</option>
-              </select>
-            </div>
-            <div>
-              <label for="quantity">Quantity of Container</label>
-              <select name="Quantity" class="form-input">
-                <option value="0">2 containers</option>
-                <option value="1">3 containers</option>
-                <option value="2">4 containers</option>
-              </select>
-            </div>
+
+    <div class="Schedule-cont">
+      <h5 class="Schedule">Schedule Pickup</h5>
+      <p class="instruction">
+        Please complete the form below, to request a quote, and we’ll be in
+        touch. Or you can call us and our specialists will provide help!
+      </p>
+      <form class="Schedule-form">
+        <div class="form-wrap">
+          <div>
+            <label for="enquiry">Waste Type</label>
+            <select name="Enquiry" class="form-input">
+              <option value="default">Choose a waste type</option>
+              <option value="plastic">Plastic</option>
+              <option value="paper">Paper</option>
+              <option value="metal">Metal</option>
+              <option value="bottle">Bottle</option>
+              <option value="can">Can</option>
+            </select>
           </div>
-          <h5 class="Schedule">Collection Frequency</h5>
-          <div class="freq">
-            <label for="once">
-              <input type="radio" name="once" checked>
-            Once per week
-            </label>
-            <label for="twice">
-              <input type="radio" name="twice" >
-            Twice per week
-            </label>
-            <label for="thrice">
-              <input type="radio" name="thrice" >
-            Thrice per week
-            </label>
+          <div>
+            <label for="date">Date</label>
+            <input type="date" class="form-input" />
           </div>
-          <div class="form-container">
-            <div class="form-group">
-              <label for="first-name">First Name</label>
-              <input type="text" id="first-name" name="first-name" placeholder="Amina">
-            </div>
-            <div class="form-group">
-                <label for="last-name">Last Name</label>
-                <input type="text" id="last-name" name="last-name" placeholder="Lasisi">
-            </div>
+
+          <div>
+            <label for="size">Container size</label>
+            <select name="Size" class="form-input">
+              <option value="0">32 Gallon container</option>
+              <option value="1">40 Gallon container</option>
+              <option value="2">44 Gallon container</option>
+            </select>
+          </div>
+          <div>
+            <label for="quantity">Quantity of Container</label>
+            <select name="Quantity" class="form-input">
+              <option value="0">2 containers</option>
+              <option value="1">3 containers</option>
+              <option value="2">4 containers</option>
+            </select>
+          </div>
+        </div>
+        <h5 class="Schedule">Collection Frequency</h5>
+        <div class="freq">
+          <label for="weekly">
+            <input type="radio" name="weekly" checked />
+            Weekly
+          </label>
+          <label for="bi-weekly">
+            <input type="radio" name="bi-weekly" />
+            Bi-weekly
+          </label>
+          <label for="monthly">
+            <input type="radio" name="monthly" />
+            Monthly
+          </label>
+        </div>
+        <div class="form-container">
           <div class="form-group">
-              <label for="email">Email Address</label>
-              <input type="email" id="email" name="email" placeholder="aminalasis@gmail.com">
+            <label for="first-name">First Name</label>
+            <input
+              type="text"
+              id="first-name"
+              name="first-name"
+              placeholder="Amina"
+            />
           </div>
           <div class="form-group">
-              <label for="phone">Phone Number</label>
-              <input type="tel" id="phone" name="phone" placeholder="08075698013">
+            <label for="last-name">Last Name</label>
+            <input
+              type="text"
+              id="last-name"
+              name="last-name"
+              placeholder="Lasisi"
+            />
           </div>
-      </div>
-          <div class="subscribe">
-            <button type="submit" class="submit"><a href="../PAGES/Payment.html">Submit Request</a>
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M13 9L16 12M16 12L13 15M16 12L8 12M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
-                  stroke="#ffffff"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              
-              </svg>
-            </button>
-            <div class="call">
-              <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="0.5" y="0.5" width="55" height="55" rx="27.5" stroke="#151515"/>
-                <rect x="9" y="10" width="38" height="36" rx="18" fill="#1B5E20"/>
-                <path d="M36.9999 31.46L31.7299 30.85L29.2099 33.37C26.3713 31.9259 24.064 29.6186 22.6199 26.78L25.1499 24.25L24.5399 19H19.0299C18.4499 29.18 26.8199 37.55 36.9999 36.97V31.46Z" fill="white"/>
-              </svg>               
-              <div>
-                <p> Make a call </p>
-                <p>08075698013</p>
-              </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="aminalasis@gmail.com"
+            />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="08075698013"
+            />
+          </div>
+          <div class="form-group">
+            <label for="address">Address</label>
+            <input
+              type="text"
+              id="address"
+              name="address"
+              placeholder="15, John Doe Street, John B/stop, Lagos"
+            />
+          </div>
+        </div>
+        <div class="subscribe">
+          <button type="submit" class="submit">
+            <a href="../PAGES/Payment.html">Submit Request</a>
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M13 9L16 12M16 12L13 15M16 12L8 12M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                stroke="#ffffff"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <div class="call">
+            <svg
+              width="56"
+              height="56"
+              viewBox="0 0 56 56"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                x="0.5"
+                y="0.5"
+                width="55"
+                height="55"
+                rx="27.5"
+                stroke="#151515"
+              />
+              <rect
+                x="9"
+                y="10"
+                width="38"
+                height="36"
+                rx="18"
+                fill="#1B5E20"
+              />
+              <path
+                d="M36.9999 31.46L31.7299 30.85L29.2099 33.37C26.3713 31.9259 24.064 29.6186 22.6199 26.78L25.1499 24.25L24.5399 19H19.0299C18.4499 29.18 26.8199 37.55 36.9999 36.97V31.46Z"
+                fill="white"
+              />
+            </svg>
+            <div>
+              <p>Make a call</p>
+              <p>08075698013</p>
             </div>
-            
           </div>
-          <p class="sub-bot">By submitting your information, you agree that our specialists may contact you via text messages or 
-            phone calls and to use your data in accordance with our Privacy Policy.
-          </p>
-        </form>
+        </div>
+        <p class="sub-bot">
+          By submitting your information, you agree that our specialists may
+          contact you via text messages or phone calls and to use your data in
+          accordance with our Privacy Policy.
+        </p>
+      </form>
 
-
-      </div>
-      
       <div class="testimonials">
         <h5>What our customers Feel about us</h5>
         <h3>
@@ -181,7 +218,7 @@
         <div class="test-wrap">
           <div class="testimonial-card">
             <div class="card-top">
-              <img src="/IMAGES/testimonial1.png" alt="female-customer" />
+              <img src="../IMAGES/testimonial1.png" alt="female-customer" />
               <h5 style="margin-top: 10px">Testimonial from Amina, Lagos</h5>
             </div>
             <p>
@@ -193,7 +230,7 @@
           </div>
           <div class="testimonial-card">
             <div class="card-top">
-              <img src="/IMAGES/testimonial2.png" alt="male-customer" />
+              <img src="../IMAGES/testimonial2.png" alt="male-customer" />
               <h5 style="margin-top: 10px">Testimonial from Tunde, Abuja</h5>
             </div>
             <p>
@@ -205,7 +242,7 @@
           </div>
         </div>
       </div>
-      
+
       <!-- FAQ -->
       <div class="FAQ">
         <h3>
@@ -238,124 +275,133 @@
         </div>
       </div>
 
-    <!-- Newsletter -->
-    <div class="newsletter">
-      <div class="newsletter-text-ct">
-        <h2>Newsletter</h2>
-        <p>
-          Sign up for Industry alert, deals, news and <br />
-          insights from WasteFlip Company.
-        </p>
-      </div>
-      <form>
-        <input type="email" placeholder="Enter your email address" required />
-        <button type="submit" class="submit">
-          Subscribe
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M13 9L16 12M16 12L13 15M16 12L8 12M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
-              stroke="#ffffff"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+      <!-- Newsletter -->
+      <div class="news-cont">
+        <div class="newsletter">
+          <div class="newsletter-text-ct">
+            <h2>Ready to supercharge your enviroment?</h2>
+            <p class="news-desc">
+              Ask about wasteflip services, pricing, implementation, or anything
+              else. Our highly trained reps are standing by, ready to help.
+            </p>
+          </div>
+          <form>
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              required
             />
-          </svg>
-        </button>
-      </form>
-    </div>
+            <button type="submit" class="submit">
+              Subscribe
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13 9L16 12M16 12L13 15M16 12L8 12M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                  stroke="#ffffff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+      <!-- footer section -->
+      <footer class="footer">
+        <div class="container">
+          <!-- Company Info -->
+          <div class="section1">
+            <h3>WasteFlip</h3>
+            <div class="wasteflip-info">
+              <p>
+                Manage your waste pickups with us as we seamlessly connect you
+                to the best waste management around you
+              </p>
+            </div>
+          </div>
 
-    <!-- footer section -->
-    <footer class="footer">
-      <div class="container">
-        <!-- Company Info -->
-        <div class="section1">
-          <h3>WasteFlip</h3>
-          <div class="wasteflip-info">
-            <p>
-              Manage your waste pickups with us as we seamlessly connect you
-              to the best waste management around you
+          <!-- Company Links -->
+          <div class="section2">
+            <h4>Company</h4>
+            <p><a href="#">About Us</a></p>
+            <p><a href="#">Sustainability</a></p>
+            <p><a href="#">Leadership team</a></p>
+          </div>
+
+          <!-- Services Links -->
+          <div class="section2">
+            <h4>Services</h4>
+            <p><a href="#">Individuals</a></p>
+            <p><a href="#">Businesses</a></p>
+            <p><a href="#">Waste Management</a></p>
+          </div>
+          <!-- Social Media Links -->
+          <div class="section4">
+            <h4>
+              You can also reach us on <br />
+              our social media platforms
+            </h4>
+            <div class="social-icons">
+              <a href="#"
+                ><img src="../IMAGES/prime_twitter.svg" alt="Twitter"
+              /></a>
+              <a href="#"
+                ><img src="../IMAGES/grommet-icons_linkedin.svg" alt="LinkedIn"
+              /></a>
+              <a href="#"><img src="../IMAGES/Vector.svg" alt="Instagram" /></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer MIDDLE-->
+        <div class="more-inf">
+          <h5>For more information, reach out to us</h5>
+          <div>
+            <p class="mail">
+              <img src="../IMAGES/mail.svg" alt="email" />
+              <a href="mailto:Wasteflip@gmail.com">Wasteflip@gmail.com</a>
+            </p>
+            <p class="mail">
+              <img src="../IMAGES/phone-outgoing.svg" alt="call" />
+              <a href="tel:+2342868849802">+234 2868 849802</a>
             </p>
           </div>
         </div>
-
-        <!-- Company Links -->
-        <div class="section2">
-          <h4>Company</h4>
-          <p><a href="#">About Us</a></p>
-          <p><a href="#">Sustainability</a></p>
-          <p><a href="#">Leadership team</a></p>
-        </div>
-
-        <!-- Services Links -->
-        <div class="section2">
-          <h4>Services</h4>
-          <p><a href="#">Individuals</a></p>
-          <p><a href="#">Businesses</a></p>
-          <p><a href="#">Waste Management</a></p>
-        </div>
-        <!-- Social Media Links -->
-        <div class="section4">
-          <h4>You can also reach us on <br> our social media platforms</h4>
-          <div class="social-icons">
-            <a href="#"
-              ><img src="/IMAGES/prime_twitter.svg" alt="Twitter"
-            /></a>
-            <a href="#"
-              ><img src="/IMAGES/grommet-icons_linkedin.svg" alt="LinkedIn"
-            /></a>
-            <a href="#"><img src="/IMAGES/Vector.svg" alt="Instagram" /></a>
+        <div class="hr"></div>
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          <div class="bottom-left">
+            <a href="#">Privacy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Policy</a>
+          </div>
+          <div class="copyright">
+            &copy; 2024 WasteFlip. All rights reserved.
+            <div class="image-container">
+              <img src="../IMAGES/Trash.svg" alt="Trash Icon" />
+            </div>
           </div>
         </div>
-      </div>
-
-      <!-- Footer MIDDLE-->
-      <div class="more-inf">
-        <h5>For more information, reach out to us</h5>
-        <div>
-          <p class="mail">
-            <img src="/IMAGES/mail.svg" alt="email" />
-            <a href="mailto:Wasteflip@gmail.com">Wasteflip@gmail.com</a>
-          </p>
-          <p class="mail">
-            <img src="/IMAGES/phone-outgoing.svg" alt="call" />
-            <a href="tel:+2342868849802">+234 2868 849802</a>
-          </p>
-        </div>
-      </div>
-      <div class="hr"></div>
-      <!-- Footer Bottom -->
-      <div class="footer-bottom">
-        <div class="bottom-left">
-          <a href="#">Privacy</a>
-          <a href="#">Terms of Service</a>
-          <a href="#">Cookie Policy</a>
-        </div>
-        <div class="copyright">
-          &copy; 2024 WasteFlip. All rights reserved.
-          <div class="image-container">
-            <img src="/IMAGES/Trash.svg" alt="Trash Icon" />
-          </div>
-        </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
   <script>
-    const nav = document.querySelector('nav');
-    
-    nav.addEventListener('animationend', function() {
-      nav.style.backgroundImage = 'linear-gradient(to right,white , white)';
+    const nav = document.querySelector("nav");
+
+    nav.addEventListener("animationend", function () {
+      nav.style.backgroundImage = "linear-gradient(to right,white , white)";
     });
     const hamburgerMenu = document.getElementById("hamburger-menu");
     const navLinks = document.getElementById("nav-links");
 
     hamburgerMenu.addEventListener("click", () => {
       navLinks.classList.toggle("active");
-    })
+    });
   </script>
 </html>
