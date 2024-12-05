@@ -1,15 +1,17 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import LandingPage from "./pages/Landingpage";
-import Layout from "./pages/layout";
-import Home from "./pages/Home";
-import SignupPage from "./pages/signup";
-import LoginPage from "./pages/login";
-import Recycle from "./pages/recycle";
-import Dispose from "./pages/dispose";
-import Otp from "./pages/otp";
-import Success from "./pages/success";
-import Payment from "./pages/payment";
-import Schedule from "./pages/schedule";
+import {
+  Home,
+  Dispose,
+  LandingPage,
+  Layout,
+  LoginPage,
+  Otp,
+  Payment,
+  Recycle,
+  Schedule,
+  SignupPage,
+  Success,
+} from "./pages";
 
 function App() {
   return (
