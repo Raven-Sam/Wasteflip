@@ -14,9 +14,9 @@
       rel="stylesheet"
     />
     <link
-  rel="stylesheet"
-  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-/>
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
     <link rel="stylesheet" href="../CSS/recycle.css" />
     <script
       src="https://kit.fontawesome.com/3851908a3e.js"
@@ -28,21 +28,21 @@
   <body>
     <style>
       .nav-button {
-        display: none;}
-    .recycle-hero {
-  background-image: url(../IMAGES/recycle-hero.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  color: #ffffff;
-  margin: 0 -5.5%;
-}
-
+        display: none;
+      }
+      .recycle-hero {
+        background-image: url(../IMAGES/recycle-hero.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+        margin: 0 -5.5%;
+      }
     </style>
     <nav>
       <div class="logo">WasteFlip</div>
@@ -54,7 +54,9 @@
       <ul id="nav-links">
         <li class="link"><a href="../PAGES/homepage.html">Home</a></li>
         <li class="link"><a href="../PAGES/recycle.html">Recycle Center</a></li>
-        <li class="link"><a href="../PAGES/schedule.html">Pickup Schedule</a></li>
+        <li class="link">
+          <a href="../PAGES/schedule.html">Pickup Schedule</a>
+        </li>
         <li class="link"><a href="#contact-us">Contact Us</a></li>
         <a href="../PAGES/SIGNUP-PAGE.HTML"
           ><button class="nav-button">Sign Up</button></a
@@ -82,7 +84,6 @@
           </select>
         </div>
         <div class="type location">
-
           <div id="map"></div>
         </div>
       </div>
@@ -102,7 +103,9 @@
         </div>
         <div class="waste-category">
           <div class="waste-type">
-           <a href="/wasteflip/PAGES/dispose.html"><img src="../IMAGES/plastic.png" alt="plastic" srcset="" /></a>
+            <a href="../PAGES/dispose.html"
+              ><img src="../IMAGES/plastic.png" alt="plastic" srcset=""
+            /></a>
             <div class="green-bar">Plastic</div>
           </div>
           <div class="waste-type">
@@ -139,7 +142,7 @@
           <div></div>
         </div>
       </div>
-    
+
       <div class="drop">
         <h3>Nearby Waste drop-Offs</h3>
         <div class="drop-Offs">
@@ -403,42 +406,41 @@
       </footer>
     </div>
     <script
-    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-    integrity="sha384-2HVRjhFsi6TX/2+lYTVeeLx57ZTn3/jYx9+52wr/UuspgKH1Lpp5z5nRLSF2htTl"
-    crossorigin=""
-  ></script>
-  <script>
-    // Initialize the map
-    const map = L.map('map').setView([51.505, -0.09], 13); 
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha384-2HVRjhFsi6TX/2+lYTVeeLx57ZTn3/jYx9+52wr/UuspgKH1Lpp5z5nRLSF2htTl"
+      crossorigin=""
+    ></script>
+    <script>
+      // Initialize the map
+      const map = L.map("map").setView([51.505, -0.09], 13);
 
-    // Add a tile layer (OpenStreetMap)
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution:
-        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-    }).addTo(map);
+      // Add a tile layer (OpenStreetMap)
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution:
+          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      }).addTo(map);
 
-  
-    const marker = L.marker([51.505, -0.09]).addTo(map);
-    marker.bindPopup('<b>Default Location</b><br>London').openPopup();
+      const marker = L.marker([51.505, -0.09]).addTo(map);
+      marker.bindPopup("<b>Default Location</b><br>London").openPopup();
 
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(
-        (position) => {
-          const { latitude, longitude } = position.coords;
-          map.setView([latitude, longitude], 13);
-          marker.setLatLng([latitude, longitude]);
-          marker.bindPopup('<b>Your Location</b>').openPopup();
-        },
-        (error) => {
-          console.error('Geolocation failed:', error.message);
-        }
-      );
-    } else {
-      console.error('Geolocation is not supported by this browser.');
-    }
-  </script>
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+          (position) => {
+            const { latitude, longitude } = position.coords;
+            map.setView([latitude, longitude], 13);
+            marker.setLatLng([latitude, longitude]);
+            marker.bindPopup("<b>Your Location</b>").openPopup();
+          },
+          (error) => {
+            console.error("Geolocation failed:", error.message);
+          }
+        );
+      } else {
+        console.error("Geolocation is not supported by this browser.");
+      }
+    </script>
   </body>
-  
+
   <script>
     const nav = document.querySelector("nav");
 
