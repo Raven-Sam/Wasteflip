@@ -166,6 +166,7 @@ input {
 
 .cancel-btn,
 .pay-btn {
+  background-color: #1b5e20;
   padding: 0.75rem 1.25rem;
   border-radius: 0.1875rem;
   font-size: 1rem;
@@ -174,25 +175,21 @@ input {
 }
 
 .cancel-btn {
-  background-color: #fff;
-  color: #1b5e20;
+  margin-right: 1rem;
 }
 
-.pay-btn {
-  background-color: #1b5e20;
-  color: #ffeb3b;
-}
 button a {
   text-decoration: none;
-  color: #fff;
+  color: #ffffff;
 }
 
 button:hover {
-  background-color: #0069d9;
+  background-color: #d6fdab;
+  color: #000;
 }
 /*FOOTER*/
 footer {
-  background-color: #ffeb3b;
+  background-color: #d6fdab;
   display: flex;
   flex-direction: column;
   padding: 4rem 4rem 0;
