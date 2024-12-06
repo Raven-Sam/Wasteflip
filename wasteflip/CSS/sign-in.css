@@ -18,6 +18,10 @@ body {
   display: flex;
   font-size: small;
 }
+a {
+  text-decoration: none;
+  color: #fff;
+}
 .body-ct {
   border-radius: 0.3125rem;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
@@ -191,6 +195,9 @@ button:active {
   margin-top: 2.5rem;
   margin-left: 32%;
 }
+.login-link a {
+  color: #f05a24;
+}
 .fb-fbb:hover {
   background-color: #3b5998;
   border-radius: 0.1875rem;
@@ -249,9 +256,6 @@ button:active {
   border-radius: 0.1875rem;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
-
-
-
 
 .card:hover {
   transform: scale(1.02);
