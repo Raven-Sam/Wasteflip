@@ -99,66 +99,66 @@ nav a button {
 }
 
 .chatbot-container {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
 }
 
 .chatbot-icon {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: #1b5e20;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #1b5e20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
 .chatbot-icon img {
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 }
 
 .chatbot-window {
-    display: none;
-    position: absolute;
-    bottom: 80px;
-    right: 0;
-    width: 350px;
-    height: 500px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
+  display: none;
+  position: absolute;
+  bottom: 80px;
+  right: 0;
+  width: 350px;
+  height: 500px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
 }
 
 .chatbot-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color:#1b5e20;
-    color: #151515;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #1b5e20;
+  color: #151515;
 }
 
 .chatbot-header h3 {
-    margin: 0;
+  margin: 0;
 }
 
 #closeChatbot {
-    background: none;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 #chatbotFrame {
-    width: 100%;
-    height: calc(100% - 50px);
-    border: none;
+  width: 100%;
+  height: calc(100% - 50px);
+  border: none;
 }
 
 /* HERO-CONTENT*/
@@ -290,8 +290,8 @@ nav a button {
 .audience-cards {
   display: flex;
   flex-wrap: wrap;
-  gap:2.5rem;
-  justify-content:center;
+  gap: 2.5rem;
+  justify-content: center;
   margin: 0 auto;
   padding: 0;
 }
@@ -299,7 +299,7 @@ nav a button {
 .card {
   position: relative;
   border-radius: 0.5rem;
-  background-color:palegreen;
+  background-color: palegreen;
   width: calc(33.333% - 2rem); /* Three cards in a row */
   max-width: 28rem;
   height: auto;
@@ -352,12 +352,12 @@ nav a button {
   overflow: hidden;
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
-  box-shadow: inset 0 0 0 0  #1b5e20;
+  box-shadow: inset 0 0 0 0 #1b5e20;
   transition: box-shadow 0.3s ease;
 }
 
 .card:hover .card-content {
-  box-shadow:inset 0 0 0 3px goldenrod/* Highlight effect on hover */
+  box-shadow: inset 0 0 0 3px goldenrod; /* Highlight effect on hover */
 }
 
 /* Text Styling */
@@ -480,21 +480,21 @@ span {
 }
 
 .section3-img-ct {
-  width:100%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-    margin-bottom: 1.875rem;
+  margin-bottom: 1.875rem;
   position: relative;
   overflow: hidden;
 }
-.section3-img{
+.section3-img {
   margin-right: 1.875rem;
   width: 100%;
-   gap: 0.625rem;
-   
-   display: flex;
-   flex-direction: column;
+  gap: 0.625rem;
+
+  display: flex;
+  flex-direction: column;
 }
 .section3-img img {
   width: 80%;
@@ -511,7 +511,7 @@ span {
   align-items: flex-start;
   justify-content: space-around;
   margin-bottom: 1.875rem;
-  text-align:left;
+  text-align: left;
 }
 
 .section3-text2 h3 {
@@ -519,12 +519,13 @@ span {
   margin-bottom: 0.625rem;
 }
 
-.text2 ,.text3 {
+.text2,
+.text3 {
   font-size: 20px;
   margin-left: 20px;
 }
 .section3-text2 p {
-  font-size:13px;
+  font-size: 13px;
 }
 .text3 {
   margin-right: 200px;
@@ -789,7 +790,7 @@ span {
   color: #1b5e20;
   font-size: 2.1875rem;
   position: absolute;
-  top:-7.5rem;
+  top: -7.5rem;
   left: 5.625rem;
 }
 
@@ -846,37 +847,37 @@ span {
   text-align: center;
   background-color: white;
   color: #1b5e20;
-position: relative;
-border-radius: 0.5rem;
-background-color: white;
-width: calc(20% - 2rem); /* Three cards in a row */
-max-width: 28rem;
-height: auto;
-margin: 0 auto;
-overflow: hidden;
-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  border-radius: 0.5rem;
+  background-color: white;
+  width: calc(20% - 2rem); /* Three cards in a row */
+  max-width: 28rem;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .question-box:hover {
-transform: translateY(-10px);
-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Subtle Fade-In Animation */
 @keyframes fadeIn {
-from {
-  opacity: 0;
-  transform: translateY(10px);
-}
-to {
-  opacity: 1;
-  transform: translateY(0);
-}
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .question-box {
-animation: fadeIn 0.6s ease forwards;
+  animation: fadeIn 0.6s ease forwards;
 }
 
 .question-box::after {
@@ -919,7 +920,6 @@ animation: fadeIn 0.6s ease forwards;
   background-image: url(../Images/grass-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  margin: 0 -5.5%;
 }
 .newsletter {
   padding: 3rem;
@@ -973,23 +973,19 @@ button:hover {
 }
 /*FOOTER*/
 .footer {
-  background-color:#D6FDAB;
-  padding: 0.625rem 1.25rem;
-  position: relative;
-  bottom: 0;
-  /* width: auto; */
+  background-color: #d6fdab;
+  padding: 4rem 4rem 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer .container {
-
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
-  text-align: left;
-  height: 12.5rem;
-  /* padding: auto; */
-  margin-bottom: 3.125rem;
+  /* margin-bottom: 4rem; */
+  font-weight: 500;
 }
 
 .footer .section {
@@ -998,19 +994,23 @@ button:hover {
   min-width: 11.25rem;
 }
 footer .section:last-of-type {
+  width: 22%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   text-align: right;
+  align-items: flex-end;
 }
-.footer .section img {
-  width: 1.25rem;
-}
+
 .footer h3 {
-  font-size: 1.875rem;
-  /* padding-right: 6.25rem; */
+  font-size: 2.25rem;
+  color: #1e1e1e;
   font-family: "Mochiy Pop One", "sans-serif";
 }
 
 .section h4 {
   font-size: 1.25rem;
+  margin: 1rem 0;
 }
 .wasteflip-info {
   padding: 0.625rem;
@@ -1021,7 +1021,7 @@ footer .section:last-of-type {
 }
 
 .more-inf {
-  margin-bottom: 2rem;
+  margin: 2rem 0;
   padding-left: 1rem;
 }
 .more-inf h5 {
@@ -1059,7 +1059,6 @@ footer .section:last-of-type {
 }
 
 .footer .social-icons img {
-  margin-top: 1.25rem;
   width: 1.25rem;
 }
 .footer-bottom {
@@ -1076,6 +1075,12 @@ footer .section:last-of-type {
   position: relative;
   bottom: 4.5rem;
   margin-bottom: -4rem;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
 }
 @media (max-width: 768px) {
   #nav-links {
