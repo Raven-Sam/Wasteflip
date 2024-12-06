@@ -353,38 +353,39 @@
               </div>
               
           </div>
-      </div>
-
-     <!-- Footer MIDDLE-->
-     <div class="more-inf" id="contact-us">
-      <h5>For more information, reach out to us</h5>
-      <div>
-        <p class="mail">
-          <img src="../IMAGES/mail.svg" alt="email" />
-          <a href="mailto:Wasteflip@gmail.com">Wasteflip@gmail.com</a>
-        </p>
-        <p class="mail">
-          <img src="../IMAGES/phone-outgoing.svg" alt="call" />
-          <a href="tel:+2342868849802">+234 2868 849802</a>
-        </p>
-      </div>
-    </div>
-    <div class="hr"></div>
-      
-      <!-- Footer Bottom -->
-      <div class="footer-bottom">
-        <div class="bottom-left">
-          <a href="#">Privacy</a>
-          <a href="#">Terms of Service</a>
-          <a href="#">Cookie Policy</a>
         </div>
-        <div class="copyright">
-          &copy; 2024 WasteFlip. All rights reserved.
-          <div class="image-container">
-            <img src="../IMAGES/Trash.svg" alt="Trash Icon" />
+
+        <!-- Footer MIDDLE-->
+        <div class="more-inf" id="contact-us">
+          <h5>For more information, reach out to us</h5>
+          <div>
+            <p class="mail">
+              <img src="../IMAGES/mail.svg" alt="email" />
+              <a href="mailto:Wasteflip@gmail.com">Wasteflip@gmail.com</a>
+            </p>
+            <p class="mail">
+              <img src="../IMAGES/phone-outgoing.svg" alt="call" />
+              <a href="tel:+2342868849802">+234 2868 849802</a>
+            </p>
           </div>
         </div>
-      </div>
+        <div class="hr"></div>
+      
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          <div class="bottom-left">
+            <a href="#">Privacy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Policy</a>
+          </div>
+          <div class="copyright">
+            &copy; 2024 WasteFlip. All rights reserved.
+            <div class="image-container">
+              <img src="../IMAGES/Trash.svg" alt="Trash Icon" />
+            </div>
+          </div>
+        </div>
+    
   </footer>
 
                
@@ -400,64 +401,63 @@
         <iframe id="chatbotFrame" src="chatbot/chatbot.html"></iframe>
     </div>
 </div>
-                <script>
-                    const chatbotIcon = document.getElementById('chatbotIcon');
-                    const chatbotWindow = document.getElementById('chatbotWindow');
-                    const closeChatbot = document.getElementById('closeChatbot');
-                    const chatbotFrame = document.getElementById('chatbotFrame');
-                
-                    chatbotIcon.addEventListener('click', function() {
-                        chatbotWindow.style.display = 'block';
-                    });
-                
-                    closeChatbot.addEventListener('click', function() {
-                        chatbotWindow.style.display = 'none';
-                    });
-                
-                    window.addEventListener('message', function(event) {
-                        if (event.source === chatbotFrame.contentWindow) {
-                            handleChatbotMessage(event.data);
-                        }
-                    });
-                
-                    function handleChatbotMessage(message) {
-                        switch(message.action) {
-                            case 'navigate':
-                                navigateChatbot(message.page);
-                                break;
-                        }
-                    }
-                
-                    function navigateChatbot(page) {
-                        switch(page) {
-                            case 'home':
-                                chatbotFrame.src = 'chatbot/chatbot.html';
-                                break;
-                            case 'page1':
-                                chatbotFrame.src = 'chatbot/chatbotpage1.html';
-                                break;
-                            case 'page2':
-                                chatbotFrame.src = 'chatbot/chatbotpage2.html';
-                                break;
-                        }
-                    }
-                </script>
-            </body>
-    </body>
+    <script>
+        const nav = document.querySelector('nav');
+
+        nav.addEventListener('animationend', function () {
+          nav.style.backgroundImage = 'linear-gradient(to right,white , white)';
+        });
+        const hamburgerMenu = document.getElementById("hamburger-menu");
+          const navLinks = document.getElementById("nav-links");
+
+          hamburgerMenu.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+          })
+
+
+        const chatbotIcon = document.getElementById('chatbotIcon');
+        const chatbotWindow = document.getElementById('chatbotWindow');
+        const closeChatbot = document.getElementById('closeChatbot');
+        const chatbotFrame = document.getElementById('chatbotFrame');
+    
+        chatbotIcon.addEventListener('click', function() {
+            chatbotWindow.style.display = 'block';
+        });
+    
+        closeChatbot.addEventListener('click', function() {
+            chatbotWindow.style.display = 'none';
+        });
+    
+        window.addEventListener('message', function(event) {
+            if (event.source === chatbotFrame.contentWindow) {
+                handleChatbotMessage(event.data);
+            }
+        });
+    
+        function handleChatbotMessage(message) {
+            switch(message.action) {
+                case 'navigate':
+                    navigateChatbot(message.page);
+                    break;
+            }
+        }
+    
+        function navigateChatbot(page) {
+            switch(page) {
+                case 'home':
+                    chatbotFrame.src = 'chatbot/chatbot.html';
+                    break;
+                case 'page1':
+                    chatbotFrame.src = 'chatbot/chatbotpage1.html';
+                    break;
+                case 'page2':
+                    chatbotFrame.src = 'chatbot/chatbotpage2.html';
+                    break;
+            }
+        }
+    </script>
+    
 </body>
 
-<script>
-  const nav = document.querySelector('nav');
-
-  nav.addEventListener('animationend', function () {
-    nav.style.backgroundImage = 'linear-gradient(to right,white , white)';
-  });
-  const hamburgerMenu = document.getElementById("hamburger-menu");
-    const navLinks = document.getElementById("nav-links");
-
-    hamburgerMenu.addEventListener("click", () => {
-      navLinks.classList.toggle("active");
-    })
-</script>
 
 </html>
