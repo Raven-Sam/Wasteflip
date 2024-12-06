@@ -1,0 +1,145 @@
+.otp-body {
+  height: auto;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5) url(/IMAGES/recycle-waste-management.jpg);
+  background-blend-mode: darken;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: center;
+  display: flex;
+  font-size: small;
+}
+
+.otp-body-ct {
+  border-radius: 0.3125rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.title {
+  width: 50%;
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: "Mochiy Pop One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  margin-bottom: 1.25rem;
+  animation: titleAnimation 6s infinite;
+  background: linear-gradient(to right, #ff0000, #ffff00, #0000ff);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@keyframes titleAnimation {
+  0% {
+    transform: scale(1);
+    background-position: 0% 50%;
+  }
+  50% {
+    transform: scale(1.1);
+    background-position: 100% 50%;
+  }
+  100% {
+    transform: scale(1);
+    background-position: 0% 50%;
+  }
+}
+
+.otp-form-ct {
+  width: 30%;
+  height: 80%;
+  background-color: #fff;
+  padding: 2rem;
+  margin-right: 6.25rem;
+  border-radius: 0.625rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.otp-text h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #1b5e20;
+}
+
+.otp-text p {
+  margin-bottom: 2rem;
+}
+
+.otp-ct {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 70%;
+}
+.otp-inputs {
+  width: 100%;
+}
+
+.otp-inputs input {
+  width: 8%;
+  height: 2.5rem;
+  border-bottom: 0.1875rem solid #1b5e20;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-radius: 0.25rem;
+  margin: 0 0.5rem;
+  text-align: center;
+  font-size: 1.25rem;
+}
+.otp-inputs ::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  display: none;
+}
+.resend-container {
+  margin-bottom: 1rem;
+}
+
+.otp-ct p a,
+a {
+  color: #1b5e20;
+  text-decoration: none;
+}
+
+.verify-btn {
+  background-color: #1b5e20;
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.verify-btn a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.verify-btn:hover {
+  background-color: #0069d9;
+}
+.done {
+  background-color: #1b5e20;
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.done a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.done:hover {
+  background-color: green;
+}

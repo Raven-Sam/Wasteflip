@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="/wasteflip/CSS/dasbord styles/Dasboard-payment--section.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Mochiy+Pop+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>Dashboard Payment Section</title>
+  </head>
+  <body>
+    <section class="dashboard-payment">
+      <div class="layout-container">
+        <aside class="sidebar-column">
+          <nav class="sidebar">
+            <div class="sidebar-content">
+              <div class="logo-container">
+                <h1 class="logo">WasteFlip</h1>
+              </div>
+              <a
+                href="/wasteflip/PAGES/dasboards/Dasboardhome.html"
+                class="nav-item"
+              >
+                <div class="nav-icon">
+                  <img
+                    src="/wasteflip/IMAGES/Dashboard-icon.svg"
+                    alt="Dashboard icon"
+                    loading="lazy"
+                  />
+                </div>
+                <span class="nav-text">Dashboard</span>
+              </a>
+              <a
+                href="/wasteflip/PAGES/dasboards/Paymentpage.html"
+                class="nav-item nav-item-active"
+              >
+                <div class="nav-icon">
+                  <img
+                    src="/wasteflip/IMAGES/Payment-icon.svg"
+                    alt="Payment icon"
+                    loading="lazy"
+                  />
+                </div>
+                <span class="nav-text">Payment</span>
+              </a>
+              <a
+                href="/wasteflip/PAGES/dasboards/Analyticspage.html"
+                class="nav-item"
+              >
+                <div class="nav-icon">
+                  <img
+                    src="/wasteflip/IMAGES/Analytics-icon.svg"
+                    alt="Analytics icon"
+                    loading="lazy"
+                  />
+                </div>
+                <span class="nav-text">Analytics</span>
+              </a>
+            </div>
+            <div class="admin-profile">
+              <div class="admin-avatar">
+                <img
+                  src="/wasteflip/IMAGES/jane-profile.png"
+                  alt="Admin avatar"
+                  loading="lazy"
+                />
+              </div>
+              <span class="admin-name">Jane</span>
+            </div>
+          </nav>
+        </aside>
+        <main class="main-column">
+          <div class="main-content">
+            <header class="dashboard-header">
+              <div class="header-left">
+                <button class="back-button" aria-label="Go back">
+                  <img
+                    src="/wasteflip/IMAGES/backbotton-icon.svg"
+                    alt="Back icon"
+                    class="back-icon"
+                  />
+                </button>
+                <span class="breadcrumb">Dashboards</span>
+              </div>
+              <div class="header-right">
+                <div class="search-bar">
+                  <img
+                    src="/wasteflip/IMAGES/search-icon.svg"
+                    alt="Search icon"
+                    class="search-icon"
+                  />
+                  <input
+                    type="text"
+                    class="search-input"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                </div>
+                <button class="notification-button" aria-label="Notifications">
+                  <img
+                    src="/wasteflip/IMAGES/notification-icon.svg"
+                    alt="Notification icon"
+                    class="notification-icon"
+                  />
+                  <span class="notification-badge">3</span>
+                </button>
+              </div>
+            </header>
+            <div class="dashboard-stats">
+              <div class="stat-card total-balance">
+                <h2 class="stat-title">Total Balance</h2>
+                <p class="stat-value">N34,500.12</p>
+              </div>
+              <div class="stat-card total-paid">
+                <h2 class="stat-title">Total Paid</h2>
+                <p class="stat-value">N4,500.12</p>
+              </div>
+              <div class="stat-card due-payment">
+                <h2 class="stat-title">2 Due Payment</h2>
+                <p class="stat-value">N4,320</p>
+              </div>
+              <div class="stat-card submissions">
+                <h2 class="stat-title">4 submission</h2>
+                <p class="stat-value">N6,320</p>
+              </div>
+            </div>
+            <div class="upcoming-pickup">
+              <div class="pickup-header">
+                <h2 class="pickup-title">Upcoming Pickup</h2>
+                <button class="pickup-button" aria-label="More options">
+                  <img
+                    src="/wasteflip/IMAGES/more-option.svg"
+                    alt="More options icon"
+                    class="pickup-button-icon"
+                  />
+                </button>
+              </div>
+              <table class="pickup-table">
+                <thead>
+                  <tr>
+                    <th>Customer</th>
+                    <th>Date</th>
+                    <th>Payment Method</th>
+                    <th>Amount</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="customer-info">
+                        <div class="customer-avatar">
+                          <img
+                            src="/wasteflip/IMAGES/profile-photo1.png"
+                            alt="Seun Omotusi avatar"
+                            loading="lazy"
+                          />
+                        </div>
+                        <span class="customer-name">Seun Omotusi</span>
+                      </div>
+                    </td>
+                    <td>Jun 24, 2024</td>
+                    <td>Credit Card</td>
+                    <td>N2000.00</td>
+                    <td>
+                      <span class="status-badge status-processing"
+                        >Processing</span
+                      >
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="customer-info">
+                        <div class="customer-avatar">
+                          <img
+                            src="/wasteflip/IMAGES/profile-photo2.png"
+                            alt="Ore Grace avatar"
+                            loading="lazy"
+                          />
+                        </div>
+                        <span class="customer-name">Ore Grace</span>
+                      </div>
+                    </td>
+                    <td>Jun 24, 2024</td>
+                    <td>Credit Card</td>
+                    <td>N2000.00</td>
+                    <td>
+                      <span class="status-badge status-success">Success</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="customer-info">
+                        <div class="customer-avatar">
+                          <img
+                            src="/wasteflip/IMAGES/profile-photo3.png"
+                            alt="Brian Babaoye avatar"
+                            loading="lazy"
+                          />
+                        </div>
+                        <span class="customer-name">Brian Babaoye</span>
+                      </div>
+                    </td>
+                    <td>Jun 24, 2024</td>
+                    <td>Credit card</td>
+                    <td>N2000.00</td>
+                    <td>
+                      <span class="status-badge status-failed">Failed</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="customer-info">
+                        <div class="customer-avatar">
+                          <img
+                            src="/wasteflip/IMAGES/profile-photo4.png"
+                            alt="Orlando Lawal avatar"
+                            loading="lazy"
+                          />
+                        </div>
+                        <span class="customer-name">Orlando Lawal</span>
+                      </div>
+                    </td>
+                    <td>Jun 24, 2024</td>
+                    <td>Credit Card</td>
+                    <td>N2000.00</td>
+                    <td>
+                      <span class="status-badge status-approved">Approved</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="customer-info">
+                        <div class="customer-avatar">
+                          <img
+                            src="/wasteflip/IMAGES/profile-photo5.png"
+                            alt="Ngozi Ojji avatar"
+                            loading="lazy"
+                          />
+                        </div>
+                        <span class="customer-name">Ngozi Ojji</span>
+                      </div>
+                    </td>
+                    <td>Jun 24, 2024</td>
+                    <td>Transfer</td>
+                    <td>N2000.00</td>
+                    <td>
+                      <span class="status-badge status-approved">Approved</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="customer-info">
+                        <div class="customer-avatar">
+                          <img
+                            src="/wasteflip/IMAGES/profile-photo3.png"
+                            alt="Jennifer Ogbeifun avatar"
+                            loading="lazy"
+                          />
+                        </div>
+                        <span class="customer-name">Jennifer Ogbeifun</span>
+                      </div>
+                    </td>
+                    <td>Jun 24, 2024</td>
+                    <td>Credit Card</td>
+                    <td>N2000.00</td>
+                    <td>
+                      <span class="status-badge status-failed">Failed</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="customer-info">
+                        <div class="customer-avatar">
+                          <img
+                            src="/wasteflip/IMAGES/profile-photo2.png"
+                            alt="Esther Sodipo avatar"
+                            loading="lazy"
+                          />
+                        </div>
+                        <span class="customer-name">Esther Sodipo</span>
+                      </div>
+                    </td>
+                    <td>Jun 24, 2024</td>
+                    <td>Credit Card</td>
+                    <td>N2000.00</td>
+                    <td>
+                      <span class="status-badge status-complete">Complete</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="customer-info">
+                        <div class="customer-avatar">
+                          <img
+                            src="/wasteflip/IMAGES/profile-photo5.png"
+                            alt="Tomisin Abiola avatar"
+                            loading="lazy"
+                          />
+                        </div>
+                        <span class="customer-name">Tomisin Abiola</span>
+                      </div>
+                    </td>
+                    <td>Jun 24, 2024</td>
+                    <td>Credit Card</td>
+                    <td>N2000.00</td>
+                    <td>
+                      <span class="status-badge status-complete">Complete</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="customer-info">
+                        <div class="customer-avatar">
+                          <img
+                            src="/wasteflip/IMAGES/profile-photo1.png"
+                            alt="Favour Nwankwo avatar"
+                            loading="lazy"
+                          />
+                        </div>
+                        <span class="customer-name">Favour Nwankwo</span>
+                      </div>
+                    </td>
+                    <td>Jun 24, 2024</td>
+                    <td>Credit Card</td>
+                    <td>N2000.00</td>
+                    <td>
+                      <span class="status-badge status-complete">Complete</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </main>
+      </div>
+    </section>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const navItems = document.querySelectorAll(".nav-item");
+        navItems.forEach((item) => {
+          item.addEventListener("click", function () {
+            navItems.forEach((i) => i.classList.remove("nav-item-active"));
+            this.classList.add("nav-item-active");
+          });
+        });
+
+        const backButton = document.querySelector(".back-button");
+        backButton.addEventListener("click", function () {
+          console.log("Back button clicked");
+        });
+
+        const searchInput = document.querySelector(".search-input");
+        searchInput.addEventListener("input", function () {
+          console.log("Search input:", this.value);
+        });
+
+        const notificationButton = document.querySelector(
+          ".notification-button"
+        );
+        notificationButton.addEventListener("click", function () {
+          console.log("Notification button clicked");
+        });
+
+        const pickupButton = document.querySelector(".pickup-button");
+        pickupButton.addEventListener("click", function () {
+          console.log("Pickup options button clicked");
+        });
+
+        const statCards = document.querySelectorAll(".stat-card");
+        statCards.forEach((card) => {
+          card.addEventListener("mouseenter", function () {
+            this.style.transform = "translateY(-5px)";
+          });
+          card.addEventListener("mouseleave", function () {
+            this.style.transform = "translateY(0)";
+          });
+        });
+
+        const tableRows = document.querySelectorAll(".pickup-table tbody tr");
+        tableRows.forEach((row) => {
+          row.addEventListener("click", function () {
+            console.log(
+              "Row clicked:",
+              this.querySelector(".customer-name").textContent
+            );
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
